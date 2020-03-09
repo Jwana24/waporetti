@@ -12,10 +12,12 @@ Projet ouvert le 9 mars 2020
 
 ## History
 
-### 9 mars 2020 - 20h34
-**Francois**
+### 9 mars 2020
+
+#### Francois
 - Ajout de variables couleurs dans le CSS
 - inclusion des typos "Roboto" et "Lobster"
 - Inclusion des google Icons (ca peut servir)
 - création du Menu Desktop html
 - Création du CSS pour le menu
+- Ajout des classes de couleurs text et bg (blue-text ou blue-bg et ainsi de suite)
