@@ -248,7 +248,7 @@ li#item-5:hover {
 }
 
 .card-long{
-  width:95%;
+  width:100%;
   margin-left:2%;
   min-height:400px;
   box-shadow:5px 5px 8px #ccc;
