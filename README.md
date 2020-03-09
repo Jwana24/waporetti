@@ -21,3 +21,5 @@ Projet ouvert le 9 mars 2020
 - création du Menu Desktop html
 - Création du CSS pour le menu
 - Ajout des classes de couleurs text et bg (blue-text ou blue-bg et ainsi de suite)
+- creation classe container, button
+- Debut creation section parcours et horaires
