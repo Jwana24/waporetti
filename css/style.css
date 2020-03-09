@@ -1,4 +1,18 @@
+@import "animations.css";
+
 /*------------GLOBAL CSS-------------*/
+body {
+  width:100%;
+  font-family: Roboto;
+  font-size:1.1em;
+  --blue : #00bcd4;
+  --orange : #f57c00;
+  --green : #8bc34a;
+  --pink : #e91e63;
+  --red :  #f44336;
+  --yellow : #ffc107;
+}
+
 
 
 
@@ -11,6 +25,132 @@
 
 
 /*---------------HEADER-NAV---------------*/
+
+header.small {
+  display:none;
+}
+
+header.large {
+  right:0;
+  top:0;
+  width:20%;
+  height:100vh;
+  position:fixed;
+  display:flex;
+  align-items: center;
+  padding:0;
+  box-shadow:-4px 0px 8px #ccc;
+}
+
+header .titleNav {
+  position:absolute;
+  top:0;
+  width:100%;
+  font-size:0.8em;
+  margin-left:10px;
+  animation:come_from_top 1s linear;
+}
+
+header .titleNav h3 {
+  font-size:1.4em;
+  font-family: 'Lobster';
+  margin-bottom:0;
+}
+
+header.large nav, header.large nav ul {
+  width:100%;
+  padding:0px;
+}
+
+header.large ul li {
+  list-style: none;
+  padding:20px;
+  width:100%;
+  text-align: left;
+  background: #fff;
+  transition:background-color 0.2s linear;
+  position:relative;
+}
+header.large ul li a i {
+  display:inline-block;
+  height:100%;
+  line-height: 100%;
+  vertical-align: middle;
+  left:3px;
+  top:0%;
+  margin-left:-15px;
+  margin-right:10px;
+}
+
+header.large ul li a {
+  font-weight: 100;
+  color:#888;
+  text-decoration: none;
+  transition:font-size 0.2s linear;
+  font-size:1em;
+}
+
+li#item-1 {
+  animation: come_from_right_1 1s linear;
+}
+li#item-2 {
+  animation: come_from_right_2 1s linear;
+}
+li#item-3 {
+  animation: come_from_right_3 1s linear;
+}
+li#item-4 {
+  animation: come_from_right_4 1s linear;
+}
+li#item-5 {
+  animation: come_from_right_5 1s linear;
+}
+
+
+li#item-1 a i {
+  color:var(--blue);
+}
+li#item-2 a i  {
+  color:var(--orange);
+}
+li#item-3 a i  {
+  color:var(--green);
+}
+li#item-4 a i  {
+  color:var(--yellow);
+}
+li#item-5 a i  {
+  color:var(--red);
+}
+
+
+
+
+
+/* ----- > Hover */
+
+header.large ul li:hover a, header.large ul li:hover a i {
+  font-size: 1.2em;
+  color:#fff !important;
+}
+
+
+
+li#item-1:hover {
+  background-color:var(--blue);
+}
+li#item-2:hover {
+  background-color:var(--orange);
+}
+li#item-3:hover {
+  background-color:var(--green);
+}
+li#item-4:hover {
+  background-color:var(--yellow);
+}
+li#item-5:hover {
+  background-color:var(--red);
+}
 
 
 
@@ -60,3 +200,26 @@
 
 
 /*---------------FOOTER---------------*/
+
+
+
+/*---------------MEDIA QUERIES---------------*/
+
+
+@media screen and (max-width: 800px) {
+
+  header.large {
+    display:none;
+  }
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+
+  header.large {
+    display:none;
+  }
+
+}
