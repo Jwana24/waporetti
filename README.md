@@ -25,3 +25,6 @@ Projet ouvert le 9 mars 2020
 - Debut creation section parcours et horaires
 - mise en place des zones dans les cards-long
 - mise en place des maps
+
+#### Thomas
+- Début de la création des cards "tarifs"
