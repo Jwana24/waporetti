@@ -254,10 +254,23 @@ li#item-5:hover {
   box-shadow:5px 5px 8px #ccc;
   border:1px solid #ccc;
   margin-bottom:20px;
+  display:flex;
+  flex-direction: row;
 }
 
+.card-long-left {
+  width:20%;
+}
+.card-long-center {
+  width:40%;
+}
 
-
+.map {
+  height:400px;
+}
+.card-long-right {
+  width:40%;
+}
 
 
 
