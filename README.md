@@ -23,5 +23,13 @@ Projet ouvert le 9 mars 2020
 - Ajout des classes de couleurs text et bg (blue-text ou blue-bg et ainsi de suite)
 - creation classe container, button
 - Debut creation section parcours et horaires
+<<<<<<< HEAD
+- mise en place des zones dans les cards-long
+- mise en place des maps
+
+#### Thomas
+- Début de la création des cards "tarifs"
+=======
 
 ### 10 mars 2020
+>>>>>>> francois
