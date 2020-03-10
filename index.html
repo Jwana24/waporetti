@@ -35,11 +35,11 @@
 
 <!-- LE MENU LATERAL Francois -->
 
-<header class="large">
-
+<header class="">
+  <div class="large">
       <div class="titleNav">
         <h3>Waporetti</h3>
-        Vos petits bateaux du quotidien
+        <p>Vos petits bateaux du quotidien</p>
       </div>
 
       <nav>
@@ -51,28 +51,43 @@
           <li id="item-5"><a href="#contacts"><i class="material-icons">email</i> contacts</a></li>
         </ul>
       </nav>
-</header>
+      <div class="right-align">
+        <a class="burgerMenu" href="#"><i class="material-icons">menu</i></a>
+      </div>
+    </div>
 
-<header class="small">
+    <div class="small">
+
+      <div class="top">
+          <div class="titleNav">
+            <h3>Waporetti</h3>
+          </div>
+          <div class="burgerZone">
+            <a class="burgerMenu" href="#"><i class="material-icons">menu</i></a>
+          </div>
+      </div>
+
       <nav>
+        <h3>Waporetti</h3>
+        <a href="#" class="closeMenu"><i class="material-icons">close</i></a>
         <ul>
-          <li><a href="#"></a>
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ul>
-          </li>
+          <li id="item-1"><a href="#homepage"><i class="material-icons">close</i> home</a></li>
+          <li id="item-2"><a href="#parcours"><i class="material-icons">access_time</i> parcours et horaires</a></li>
+          <li id="item-3"><a href="#tarifs"><i class="material-icons">attach_money</i> tarifs</a></li>
+          <li id="item-4"><a href="#reservations"><i class="material-icons">check</i> réservation</a></li>
+          <li id="item-5"><a href="#contacts"><i class="material-icons">email</i> contacts</a></li>
         </ul>
       </nav>
+    </div>
 </header>
+
+
+
 
     <main>
       <!-- HOME PAGE Guillaume -->
       <section id="homePage">
-        <a class="button orange-bg">Coucou</a>
+
       </section>
 
       <!-- PARCOURS ET HORAIRES Francois-->
@@ -370,7 +385,7 @@
             </select>
           </div>
 
-          
+
           <!-- Boutons radio -->
           <div class="container-resa-button-radio">
             <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
@@ -378,7 +393,7 @@
             <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
             <label for="etudiant">Etudiant</label>
           </div>
-          
+
           <div class="container container-column">
             <!-- Coordonnees de la personne -->
             <!-- Partie nom et prénom -->
@@ -387,26 +402,26 @@
                 <label for="nom">Nom</label>
                 <input type="text" name="nom" id="nom" placeholder="ex: DUPONT" required>
               </div>
-  
+
               <div class="container-resa-coordonnees-prenom container-column">
                 <label for="prenom">Prénom</label>
                 <input type="text" name="prenom" id="prenom" placeholder="ex: Jean" required>
               </div>
             </div>
-  
+
             <!-- Partie mail et téléphone -->
             <div class="container-resa-coordonnees-mail-telephone container-row">
               <div class="container-resa-coordonnees-mail container-column">
                 <label for="mail">Adresse mail</label>
                 <input type="email" name="mail" id="mail" placeholder="exemple@exemple.fr" required>
               </div>
-  
+
               <div class="container-resa-coordonnees-telephone container-column">
                 <label for="telephone">Numéro de téléphone</label>
                 <input type="tel" name="telephone" id="telephone" placeholder="ex: 0673241399" required>
               </div>
             </div>
-  
+
             <!-- Partie adresse postale -->
             <div class="container-resa-coordonnees-content-adrPost container-row">
               <div class="container-resa-coordonnees-adrPost container-column">
@@ -415,14 +430,14 @@
                 <input type="text" name="adressPost2" id="adressPost2">
               </div>
             </div>
-  
+
             <!-- Partie code postal et ville -->
             <div class="container-resa-coordonnees-codePost-ville container-row">
               <div class="container-resa-coordonnees-codePost container-column">
                 <label for="codePost">Code postal</label>
                 <input type="text" name="codePost" id="codePost" placeholder="ex: 33000" required>
               </div>
-  
+
               <div class="container-resa-coordonnees-ville container-column">
                 <label for="ville">Ville</label>
                 <input type="text" name="ville" id="ville" placeholder="ex: BORDEAUX" required>
