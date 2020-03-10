@@ -210,12 +210,82 @@
 
       <!-- TARIFS  Thomas -->
       <section id="tarifs">
-
+        <h2>tarifs</h2>
+        <div class="container container-row" >
+          <div class="price_card">
+            <p class="titre_pass">PASS <br>JOURNALIER</p>
+            <p class="prix_pass">€2</p>
+            <p>Lorem ipsum descriptif du pass journalier, bla bla bla.</p>
+            <button class="buy_button" id=button_day>ACHETER</button>
+          </div>
+          <div class="price_card">
+            <p class="titre_pass">PASS <br>HEBDOMADAIRE</p>
+            <p class="prix_pass">€7</p>
+            <p>Lorem ipsum descriptif du pass journalier, bla bla bla.</p>
+            <button class="buy_button" id=button_week>ACHETER</button>
+          </div>
+          <div class="price_card">
+            <p class="titre_pass">PASS <br>MENSUEL</p>
+            <p class="prix_pass">€20</p>
+            <p>Lorem ipsum descriptif du pass journalier, bla bla bla.</p>
+            <button class="buy_button" id=button_month>ACHETER</button>
+          </div>
+        </div>
       </section>
 
       <!-- RESERVATIONS Johanna -->
       <section id="reservations">
+        <h2>Réservations</h2>
+        <div class="container">
+          <form action="post">
+            <!-- Dropdown -->
+            <div class="container-resa-dropdown-tarifs">
+              <label for="tarifs">Choisissez votre tarif</label>
+              <select name="tarifs" id="tarifs">
+                <option value="ticketJournee">Ticket à la journée</option>
+                <option value="aboHebdo">Abonnement hebdomadaire</option>
+                <option value="aboAnnuel">Abonnement annuel</option>
+              </select>
+            </div>
 
+            <!-- Boutons radio -->
+            <div class="container-resa-button-radio">
+              <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
+              <label for="demandeurEmploi">Demandeur d'emploi</label>
+              <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
+              <label for="etudiant">Etudiant</label>
+            </div>
+            
+            <!-- Coordonnees de la personne -->
+            <div class="container-resa-coordonnees">
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" required>
+              <label for="prenom">Prénom</label>
+              <input type="text" name="prenom" id="prenom" required>
+            </div>
+            <div>
+              <label for="mail">Adresse mail</label>
+              <input type="email" name="mail" id="mail" required>
+              <label for="telephone">Numéro de téléphone</label>
+              <input type="tel" name="telephone" id="telephone" required>
+            </div>
+            <div>
+              <label for="adressePost">Adresse postale</label>
+              <input type="text" name="adressPost1" id="adressPost1">
+              <input type="text" name="adressPost2" id="adressPost2">
+            </div>
+            <div>
+              <label for="codePost">Code postal</label>
+              <input type="text" name="codePost" id="codePost" required>
+              <label for="ville">Ville</label>
+              <input type="text" name="ville" id="ville" required>
+            </div>
+
+            <!-- Bouton envoyer -->
+            <input class="button yellow-bg" type="submit" value="Envoyer">
+
+          </form>
+        </div>
       </section>
 
       <!-- CONTACT johanna -->
