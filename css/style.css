@@ -162,10 +162,11 @@ header .titleNav {
   font-size:0.8em;
   margin-left:10px;
   animation:come_from_top 1s linear;
+  text-align:center;
 }
 
 header .titleNav h3 {
-  font-size:1.4em;
+  font-size:1.7em;
   font-family: 'Lobster';
   margin-bottom:0;
   color:var(--blue);
@@ -205,7 +206,7 @@ header .large ul li a, header .small ul li a {
   font-size:1em;
   display:block;
   width:100%;
-  
+
   }
 
 
@@ -665,6 +666,7 @@ header .large {
 header .small {
     width:100vw;
     display:block;
+    z-index:101;
   }
 
   header .small .top {
@@ -706,19 +708,20 @@ header .small {
   }
 
   /* LE MENU ISSU DU BURGER */
-    header .small nav {
-      display:flex;
-      z-index:101;
-      background:#fff;
-      align-items: center;
-    }
 
     header .small nav {
-      position:none;
-      top:0px;
+      position:fixed;
+      display:flex;
+      z-index:99;
+      background:#fff;
+      align-items: center;
+      top:40px;
       left:0px;
       width:100vw;
-      min-height:100vh;
+      min-height:calc(100vh - 40px);
+      height:calc(100vh - 40px);
+      transition:all 0.5s linear;
+      margin-left:110vw;
     }
     header .small ul {
       margin:0;
@@ -741,6 +744,14 @@ header .small {
       right:20px;
       color:#999;
     }
+
+
+    li#item-1, li#item-2, li#item-3,li#item-4, li#item-5 {
+      animation: none;
+    }
+
+
+
 
 /* ADAPT SECTIONS */
   section {
@@ -840,18 +851,18 @@ header .small {
 
   /* LE MENU ISSU DU BURGER */
   header .small nav {
-    display:none;
-    z-index:101;
+    position:fixed;
+    display:flex;
+    z-index:99;
     background:#fff;
     align-items: center;
-  }
-
-  header .small nav {
-    position:fixed;
-    top:0px;
+    top:40px;
     left:0px;
     width:100vw;
-    min-height:100vh;
+    min-height:calc(100vh - 40px);
+    height:calc(100vh - 40px);
+    transition:all 0.5s linear;
+    margin-left:110vw;
   }
   header .small ul {
     margin:0;
@@ -874,6 +885,12 @@ header .small {
     right:20px;
     color:#999;
   }
+
+
+  li#item-1, li#item-2, li#item-3,li#item-4, li#item-5 {
+    animation: none;
+  }
+
 
   /* ADAPT SECTIONS */
   section {

@@ -1,41 +1,33 @@
 // Show an element
-var show = function (elem) {
-	elem.style.display = 'block';
-};
+$(document).ready (function() {
 
-// Hide an element
-var hide = function (elem) {
-	elem.style.display = 'none';
-};
 
-// Toggle element visibility
-var toggle = function (elem) {
-	// If the element is visible, hide it
-	if (window.getComputedStyle(elem).display === 'block') {
-		hide(elem);
-		return;
-	}
-	// Otherwise, show it
-	show(elem);
-};
+  $('.scrollTo').click(function() {
+    $target = $(this).find('a').attr('href');
+    $topScroll=$($target).offset().top;
+    $("html, body").animate({scrollTop:$topScroll}, 400);
+    $('#menu-burger').css('margin-left', '110vw');
+    $('.burgerMenu').html('<i class="material-icons">menu</i>');
+    $('.burgerMenu').addClass('show');
+  });
 
-document.addEventListener('click', function (event) {
+  $(document).on('click', '.burgerMenu', function(e) {
+    e.preventDefault();
+    $this=$(this);
+    if ($this.hasClass('show')) {
+      $this.removeClass('show');
+      $('#menu-burger').css('margin-left', '0px');
+      $this.html('<i class="material-icons">close</i>');
 
-	// Make sure clicked element is our toggle
-	if (!event.target.classList.contains('toggle')) return;
+    }
+    else {
+      $('#menu-burger').css('margin-left', '110vw');
+      $this.html('<i class="material-icons">menu</i>');
+      $this.addClass('show');
+    }
+  });
 
-	// Prevent default link behavior
-	event.preventDefault();
-
-	// Get the content
-	var content = document.querySelector(event.target.hash);
-	if (!content) return;
-
-	// Toggle the content
-	toggle(content);
-
-}, false);
-
+});
 
 //////////////////////////////////////////////////////////////////
 // CARTES ////////////////////////////////////////////////////////
