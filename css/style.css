@@ -353,10 +353,10 @@ li#item-5:hover {
   text-align: center;
   flex: 1;
   height: 100%;
-
-  margin: 10px;
+  margin: 20px;
   border: 1px solid var(--green);
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .price_card:hover{
