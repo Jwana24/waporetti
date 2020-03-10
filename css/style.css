@@ -336,13 +336,14 @@ li#item-5:hover {
 
 thead tr:last-child {
   height:35px;
-  vertical-align: top;
+  vertical-align: middle;
+  font-size:0.9em;
 }
 
 tbody tr {
   border-top:1px solid #ccc;
   height:30px;
-  font-size:0.9em;
+  font-size:0.8em;
   color:#999;
   transition:all 0.3s linear;
 }
