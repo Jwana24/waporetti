@@ -65,7 +65,7 @@ main, footer {
 }
 
 section {
-  width:99%;
+  width:100%;
   min-height:100vh;
 }
 
@@ -284,7 +284,6 @@ li#item-5:hover {
 
 .card-long {
   width:100%;
-  margin-left:2%;
   min-height:400px;
   box-shadow:5px 5px 8px #ccc;
   border:1px solid #ccc;
@@ -661,7 +660,7 @@ tbody tr:hover {
 /* ------------------------------------------------------ */
 @media screen and (max-width: 992px) {
   main, footer {
-    width:90%;
+    width:98%;
   }
 
 /* TRANSFORM HEADER FOR BURGER */
@@ -793,7 +792,7 @@ header .small {
 
 @media screen and (max-width: 600px) {
   main, footer {
-    width:90%;
+    width:98%;
   }
 
   /* TRANSFORM HEADER FOR BURGER */
