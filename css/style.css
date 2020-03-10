@@ -270,7 +270,7 @@ li#item-5:hover {
 /*-------PARCOURS-SECTION 2 : FRANCOIS-------*/
 
 
-.card-long{
+.card-long {
   width:100%;
   margin-left:2%;
   min-height:400px;
@@ -487,22 +487,34 @@ button.buy_button {
     min-height:100vh;
   }
 
-
-
-}
-
-
-@media screen and (max-width: 640px) {
-  main, footer {
-    width:90%;
-  }
-  header.large {
-    display:none;
+  .container-row {
+    flex-direction:column;
   }
 
-  section {
-    width:100%;
-    min-height:100vh;
+  /* ----------------------- SPECIFICITE TRAJETS ET HORAIRES ------ */
+
+  .card-long {
+    flex-direction: column;
   }
+
+  .card-long h3 {
+    text-align:center;
+    font-size:1.5em;
+  }
+
+  .card-long-left {
+    width:95%;
+  }
+  .stopList {
+    margin-left:30%;
+  }
+  .card-long-center {
+    width:95%;
+  }
+  .card-long-right {
+    width:95%;
+  }
+
+
 
 }
