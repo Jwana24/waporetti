@@ -7,10 +7,20 @@ L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
 
 
 
+L.geoJSON(firstWay, {
+
+}).addTo(map);
+
+
+
 var map2 = L.map('map2').setView([44.8400,-0.5530], 13);
 
 L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map2);
+
+L.geoJSON(secondWay, {
+
 }).addTo(map2);
 
 
@@ -18,4 +28,8 @@ var map3 = L.map('map3').setView([44.8400,-0.5530], 13);
 
 L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map3);
+
+L.geoJSON(thirdWay, {
+
 }).addTo(map3);

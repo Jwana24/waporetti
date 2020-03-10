@@ -106,7 +106,24 @@ section h2 {
   font-family: "Lobster";
 }
 
+.center-align {
+  text-align:center;
+}
 
+a.button-circle i {
+  display:inline-block;
+  width:40px;
+  height:40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  color:#fff;
+  border-radius:50%;
+}
+
+a.button-circle:hover i {
+  box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+}
 
 
 /*---------------HEADER-NAV---------------*/
@@ -266,17 +283,21 @@ li#item-5:hover {
 
 .card-long-left {
   width:20%;
+  padding:10px;
 }
 .card-long-center {
   width:40%;
-}
-
-.map {
-  height:400px;
+  padding:10px;
 }
 .card-long-right {
   width:40%;
+  padding:10px;
 }
+
+.map {
+  height:380px;
+}
+
 
 .card-long h3 {
   display:block;
@@ -298,6 +319,38 @@ li#item-5:hover {
 }
 .card-long-3 h3 {
   color:var(--pink);
+}
+
+/* ---------------------> TABLEAUX */
+.card-long table {
+  width:100%;
+  spacing:0;
+  border-spacing : 0;
+  border-collapse : collapse;
+}
+
+.card-long thead td:not(.normal) {
+  font-size:0.8em;
+  font-weight: 500;
+}
+
+thead tr:last-child {
+  height:35px;
+  vertical-align: top;
+}
+
+tbody tr {
+  border-top:1px solid #ccc;
+  height:30px;
+  font-size:0.9em;
+  color:#999;
+  transition:all 0.3s linear;
+}
+tbody tr:hover {
+
+  font-size:1em;
+  background:#eee;
+  color:#999
 }
 
 /* ---------------------> LEFT PART */
@@ -353,7 +406,6 @@ li#item-5:hover {
   text-align: center;
   flex: 1;
   height: 100%;
-
   margin: 10px;
   border: 1px solid var(--green);
   padding: 20px;
@@ -510,6 +562,9 @@ button.buy_button {
 
 
 @media screen and (max-width: 800px) {
+  main, footer {
+    width:90%;
+  }
 
   header.large {
     display:none;
@@ -518,7 +573,6 @@ button.buy_button {
   section {
     width:100%;
     min-height:100vh;
-    height:100vh;
   }
 
 
@@ -527,7 +581,9 @@ button.buy_button {
 
 
 @media screen and (max-width: 640px) {
-
+  main, footer {
+    width:90%;
+  }
   header.large {
     display:none;
   }
@@ -535,7 +591,6 @@ button.buy_button {
   section {
     width:100%;
     min-height:100vh;
-    height:100vh;
   }
 
 }
