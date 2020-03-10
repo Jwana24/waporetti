@@ -45,6 +45,7 @@ document.addEventListener('click', function (event) {
 var map = L.map('map1').setView([44.8623, -0.5405], 13);
  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 }).addTo(map);
+map.scrollWheelZoom.disable();
 
 /////////  Define styles and icons
 var myStyle = {
@@ -78,6 +79,7 @@ L.marker([44.877708, -0.534639], {icon:orangeIcon}).addTo(map);
 var map2 = L.map('map2').setView([44.8520,-0.5565], 13);
 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 }).addTo(map2);
+map2.scrollWheelZoom.disable();
 
 /////////  Define styles and icons
 var myStyle2 = {
@@ -113,6 +115,7 @@ L.marker([44.862135, -0.548716], {icon:blueIcon}).addTo(map2);
 var map3 = L.map('map3').setView([44.8234,-0.5350], 13);
 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 }).addTo(map3);
+map3.scrollWheelZoom.disable();
 
 /////////  Define styles and icons
 var myStyle3 = {
