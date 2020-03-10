@@ -8,6 +8,7 @@ html {
 body {
   width:100%;
   font-family: Roboto;
+  font-weight:300;
   font-size:1.1em;
   --blue : #00bcd4;
   --orange : #f57c00;
@@ -101,9 +102,11 @@ section {
 
 section h2 {
   font-size:3em;
-  font-weight: 500;
   text-align:center;
-  font-family: "Lobster";
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: 100;
+  color:#999;
 }
 
 .center-align {
@@ -149,6 +152,7 @@ header .large {
   align-items: center;
   padding:0;
   box-shadow:-4px 0px 8px #ccc;
+  background:#fff;
 }
 
 header .titleNav {
@@ -287,6 +291,7 @@ li#item-5:hover {
   margin-bottom:20px;
   display:flex;
   flex-direction: row;
+  background:#fff;
 }
 
 .card-long-left {
@@ -716,7 +721,7 @@ header .small {
     }
 
     header .small nav {
-      position:fixed;
+      position:none;
       top:0px;
       left:0px;
       width:100vw;
@@ -842,7 +847,7 @@ header .small {
 
   /* LE MENU ISSU DU BURGER */
   header .small nav {
-    display:flex;
+    display:none;
     z-index:101;
     background:#fff;
     align-items: center;
