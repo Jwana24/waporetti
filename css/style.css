@@ -110,6 +110,13 @@ section h2 {
   text-align:center;
 }
 
+.right-align {
+  text-align:right;
+}
+.left-align {
+  text-align:left;
+}
+
 a.button-circle i {
   display:inline-block;
   width:40px;
@@ -128,11 +135,11 @@ a.button-circle:hover i {
 
 /*---------------HEADER-NAV---------------*/
 
-header.small {
+header .small {
   display:none;
 }
 
-header.large {
+header .large {
   right:0;
   top:0;
   width:20%;
@@ -157,14 +164,15 @@ header .titleNav h3 {
   font-size:1.4em;
   font-family: 'Lobster';
   margin-bottom:0;
+  color:var(--blue);
 }
 
-header.large nav, header.large nav ul {
+header .large nav, header .large nav ul, header .small nav, header .small nav ul {
   width:100%;
   padding:0px;
 }
 
-header.large ul li {
+header .large ul li, header .small ul li {
   list-style: none;
   padding:20px;
   width:100%;
@@ -173,7 +181,7 @@ header.large ul li {
   transition:background-color 0.2s linear;
   position:relative;
 }
-header.large ul li a i {
+header .large ul li a i, header .small ul li a i {
   display:inline-block;
   height:100%;
   line-height: 100%;
@@ -184,7 +192,7 @@ header.large ul li a i {
   margin-right:10px;
 }
 
-header.large ul li a {
+header .large ul li a, header .small ul li a {
   font-weight: 100;
   color:#888;
   text-decoration: none;
@@ -231,7 +239,7 @@ li#item-5 a i  {
 
 /* ----- > Hover */
 
-header.large ul li:hover a, header.large ul li:hover a i {
+header .large ul li:hover a, header .large ul li:hover a i, header .small ul li:hover a, header .small ul li:hover a i {
   font-size: 1.2em;
   color:#fff !important;
 }
@@ -296,6 +304,7 @@ li#item-5:hover {
 
 .map {
   height:380px;
+  z-index:98;
 }
 
 
@@ -321,7 +330,7 @@ li#item-5:hover {
   color:var(--pink);
 }
 
-/* ---------------------> TABLEAUX */
+/* ---------------------> TIME TABLES */
 .card-long table {
   width:100%;
   spacing:0;
@@ -445,9 +454,7 @@ tbody tr:hover {
 
 
 
-
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
-
 
 .price_card {
   flex: 1;
@@ -493,9 +500,6 @@ tbody tr:hover {
   padding: 20px 60px;
   border-radius: 40px;
 }
-
-
-
 
 
 /*-------RESERVATIONS-SECTION 4 : JOHANNA--------*/
@@ -647,16 +651,233 @@ tbody tr:hover {
 
 /*---------------MEDIA QUERIES---------------*/
 
-
-@media screen and (max-width: 800px) {
+/* ------------------------------------------------------ */
+/* ----------------------- TABLET ----------------------- */
+/* ------------------------------------------------------ */
+@media screen and (max-width: 992px) {
   main, footer {
     width:90%;
   }
 
-  header.large {
+/* TRANSFORM HEADER FOR BURGER */
+header .large {
+  display:none;
+}
+
+header .small {
+    width:100vw;
+    display:block;
+  }
+
+  header .small .top {
+    position:fixed;
+    height:40px;
+    width:100%;
+    left:0;
+    z-index:99;
+    top:0;
+    background:#fff;
+    box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
+    display:flex;
+    flex-direction: row;
+  }
+
+  header .small .titleNav {
+    left:10px;
+    top:0px;
+    position:relative;
+  }
+  header .small .titleNav h3 {
+    color:var(--blue);
+    margin-top:5px;
+  }
+
+  header .small .top .burgerMenu {
+    margin-right:50px;
+    padding:auto;
+    display:inline-block;
+  }
+
+  header .small .burgerMenu i {
+    font-size:2em;
+    color:#000;
+  }
+
+  a.burgerMenu:hover {
+    background:var(--blue);
+  }
+
+  /* LE MENU ISSU DU BURGER */
+    header .small nav {
+      display:flex;
+      z-index:101;
+      background:#fff;
+      align-items: center;
+    }
+
+    header .small nav {
+      position:fixed;
+      top:0px;
+      left:0px;
+      width:100vw;
+      min-height:100vh;
+    }
+    header .small ul {
+      margin:0;
+      padding:0;
+      width:100%;
+    }
+    header .small nav h3 {
+      position:absolute;
+      top:0px;
+      left:10px;
+      color:var(--blue);
+      font-family: "Lobster";
+    }
+    header .small nav li {
+      text-align:center;
+    }
+    a.closeMenu {
+      position:absolute;
+      top:20px;
+      right:20px;
+      color:#999;
+    }
+
+/* ADAPT SECTIONS */
+  section {
+    width:100%;
+    min-height:100vh;
+  }
+
+  .container-row {
+    flex-direction:column;
+  }
+
+  /* ----------------------- SPECIFICITE TRAJETS ET HORAIRES ------ */
+
+  .card-long {
+    flex-direction: column;
+  }
+
+  .card-long h3 {
+    text-align:center;
+    font-size:1.5em;
+  }
+
+  .card-long-left {
+    width:95%;
+  }
+  .stopList {
+    margin-left:30%;
+  }
+  .card-long-center {
+    width:95%;
+  }
+  .card-long-right {
+    width:95%;
+  }
+
+
+
+}
+
+/* ------------------------------------------------------ */
+/* ----------------------- MOBILE ----------------------- */
+/* ------------------------------------------------------ */
+
+@media screen and (max-width: 600px) {
+  main, footer {
+    width:90%;
+  }
+
+  /* TRANSFORM HEADER FOR BURGER */
+  header .large {
     display:none;
   }
 
+  header .small {
+      width:100vw;
+      display:block;
+    }
+
+    header .small .top {
+      position:fixed;
+      height:40px;
+      width:100%;
+      left:0;
+      z-index:99;
+      top:0;
+      background:#fff;
+      box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
+      display:flex;
+      flex-direction: row;
+    }
+
+    header .small .titleNav {
+      left:10px;
+      top:0px;
+      position:relative;
+    }
+    header .small .titleNav h3 {
+      color:var(--blue);
+      margin-top:5px;
+    }
+
+    header .small .top .burgerMenu {
+      margin-right:50px;
+      padding:auto;
+      display:inline-block;
+    }
+
+    header .small .burgerMenu i {
+      font-size:2em;
+      color:#000;
+    }
+
+    a.burgerMenu:hover {
+      background:var(--blue);
+    }
+
+
+  /* LE MENU ISSU DU BURGER */
+  header .small nav {
+    display:flex;
+    z-index:101;
+    background:#fff;
+    align-items: center;
+  }
+
+  header .small nav {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    min-height:100vh;
+  }
+  header .small ul {
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+  header .small nav h3 {
+    position:absolute;
+    top:0px;
+    left:10px;
+    color:var(--blue);
+    font-family: "Lobster";
+  }
+  header .small nav li {
+    text-align:center;
+  }
+  a.closeMenu {
+    position:absolute;
+    top:20px;
+    right:20px;
+    color:#999;
+  }
+
+  /* ADAPT SECTIONS */
   section {
     width:100%;
     min-height:100vh;
