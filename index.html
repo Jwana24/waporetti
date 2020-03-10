@@ -273,34 +273,34 @@
           <div class="container container-column">
             <!-- Coordonnees de la personne -->
             <!-- Partie nom et prénom -->
-            <div class="container-resa-coordonnees-nom-prenom container-row">
-              <div class="container-resa-coordonnees-nom container-column">
+            <div class="container-resa-coordonnees-nom-prenom container-flex container-row">
+              <div class="container-resa-coordonnees-nom container-flex container-column">
                 <label for="nom">Nom</label>
                 <input type="text" name="nom" id="nom" placeholder="ex: DUPONT" required>
               </div>
   
-              <div class="container-resa-coordonnees-prenom container-column">
+              <div class="container-resa-coordonnees-prenom container-flex container-column">
                 <label for="prenom">Prénom</label>
                 <input type="text" name="prenom" id="prenom" placeholder="ex: Jean" required>
               </div>
             </div>
   
             <!-- Partie mail et téléphone -->
-            <div class="container-resa-coordonnees-mail-telephone container-row">
-              <div class="container-resa-coordonnees-mail container-column">
+            <div class="container-resa-coordonnees-mail-telephone container-flex container-row">
+              <div class="container-resa-coordonnees-mail container-flex container-column">
                 <label for="mail">Adresse mail</label>
                 <input type="email" name="mail" id="mail" placeholder="exemple@exemple.fr" required>
               </div>
   
-              <div class="container-resa-coordonnees-telephone container-column">
+              <div class="container-resa-coordonnees-telephone container-flex container-column">
                 <label for="telephone">Numéro de téléphone</label>
                 <input type="tel" name="telephone" id="telephone" placeholder="ex: 0673241399" required>
               </div>
             </div>
   
             <!-- Partie adresse postale -->
-            <div class="container-resa-coordonnees-content-adrPost container-row">
-              <div class="container-resa-coordonnees-adrPost container-column">
+            <div class="container-resa-coordonnees-content-adrPost container-flex container-row">
+              <div class="container-resa-coordonnees-adrPost container-flex container-column">
                 <label for="adressePost">Adresse postale</label>
                 <input type="text" name="adressPost1" placeholder="ex: 36 avenue de la Liberté" id="adressPost1">
                 <input type="text" name="adressPost2" id="adressPost2">
@@ -308,13 +308,13 @@
             </div>
   
             <!-- Partie code postal et ville -->
-            <div class="container-resa-coordonnees-codePost-ville container-row">
-              <div class="container-resa-coordonnees-codePost container-column">
+            <div class="container-resa-coordonnees-codePost-ville container-flex container-row">
+              <div class="container-resa-coordonnees-codePost container-flex container-column">
                 <label for="codePost">Code postal</label>
                 <input type="text" name="codePost" id="codePost" placeholder="ex: 33000" required>
               </div>
   
-              <div class="container-resa-coordonnees-ville container-column">
+              <div class="container-resa-coordonnees-ville container-flex container-column">
                 <label for="ville">Ville</label>
                 <input type="text" name="ville" id="ville" placeholder="ex: BORDEAUX" required>
               </div>
@@ -329,8 +329,58 @@
       </section>
 
       <!-- CONTACT johanna -->
-      <section id="contact">
-
+      <section id="contacts">
+        <h2>Nous contacter</h2>
+        <form class="container-contacts container-column" action="post">
+          <div class="container-contacts">
+            <div class="container-contact-person container container-column">
+              <!-- Coordonnees de la personne -->
+              <!-- Partie nom et prénom -->
+              <div class="container-contacts-coordonnees-nom container-column">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" placeholder="ex: DUPONT" required>
+              </div>
+  
+              <div class="container-contacts-coordonnees-prenom container-column">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="ex: Jean" required>
+              </div>
+    
+              <!-- Partie mail et téléphone -->
+              <div class="container-contacts-coordonnees-mail container-column">
+                <label for="mail">Adresse mail</label>
+                <input type="email" name="mail" id="mail" placeholder="exemple@exemple.fr" required>
+              </div>
+  
+              <div class="container-contacts-coordonnees-telephone container-column">
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="ex: 0673241399" required>
+              </div>
+  
+              <!-- Message -->
+              <div class="container-contacts-message">
+                <textarea name="message" id="message" rows="7" placeholder="Votre message ici"></textarea>
+              </div>
+  
+              <!-- Bouton envoyer -->
+              <div class="container container-contacts-button">
+                <input class="button red-bg" type="submit" value="Envoyer">
+              </div>
+            </div>
+  
+            <div class="container-contact-company container container-column">
+              <div>
+                <h4>Notre adresse postale</h4>
+                <p>13 rue du Port</p>
+                <p>33000 BORDEAUX</p>
+              </div>
+              <div>
+                <h4>Notre numéro de téléphone</h4>
+                <p>05.67.82.13.99</p>
+              </div>
+            </div>
+          </div>       
+        </form>
       </section>
 
     </main>
