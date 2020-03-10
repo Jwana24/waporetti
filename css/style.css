@@ -270,7 +270,7 @@ li#item-5:hover {
 /*-------PARCOURS-SECTION 2 : FRANCOIS-------*/
 
 
-.card-long{
+.card-long {
   width:100%;
   margin-left:2%;
   min-height:400px;
@@ -334,30 +334,77 @@ li#item-5:hover {
   font-weight: 500;
 }
 
+
 thead tr:last-child {
   height:35px;
-  vertical-align: top;
+  vertical-align: middle;
+  font-size:0.9em;
+}
+tr.tableHead td {
+  position:relative;
+}
+tr.tableHead td:not(:last-child):not(.ignore)::after {
+  position:absolute;
+  content:' ';
+  display:block;
+  width:7px;
+  height:7px;
+  background:url('../images/arrow_right.svg') no-repeat top left;
+  background-size:contain;
+  right:0;
+  top:50%;
+  margin-top:-3.5px;
 }
 
 tbody tr {
   border-top:1px solid #ccc;
   height:30px;
-  font-size:0.9em;
+  font-size:0.8em;
   color:#999;
   transition:all 0.3s linear;
 }
 tbody tr:hover {
-
-  font-size:1em;
   background:#eee;
   color:#999
 }
+
+
 
 /* ---------------------> LEFT PART */
 .stopList {
   border-left:2px solid #000;
   margin-left:20px;
+  position:relative;
 }
+
+.stopList::before {
+  position:absolute;
+  display:block;
+  content:' ';
+  width:10px;
+  height:10px;
+  top:0;
+  left:0;
+  background: url('../images/arrow_top.svg') no-repeat top left;
+  background-size: contain;
+  margin-left:-6px;
+  margin-top:-10px;
+}
+
+.stopList::after {
+  position:absolute;
+  display:block;
+  content:' ';
+  width:10px;
+  height:10px;
+  top:100%;
+  left:0;
+  background: url('../images/arrow_bottom.svg') no-repeat top left;
+  background-size: contain;
+  margin-left:-6px;
+}
+
+
 .stopList ul {
   padding:0;
   margin:0;
@@ -575,22 +622,34 @@ button.buy_button {
     min-height:100vh;
   }
 
-
-
-}
-
-
-@media screen and (max-width: 640px) {
-  main, footer {
-    width:90%;
-  }
-  header.large {
-    display:none;
+  .container-row {
+    flex-direction:column;
   }
 
-  section {
-    width:100%;
-    min-height:100vh;
+  /* ----------------------- SPECIFICITE TRAJETS ET HORAIRES ------ */
+
+  .card-long {
+    flex-direction: column;
   }
+
+  .card-long h3 {
+    text-align:center;
+    font-size:1.5em;
+  }
+
+  .card-long-left {
+    width:95%;
+  }
+  .stopList {
+    margin-left:30%;
+  }
+  .card-long-center {
+    width:95%;
+  }
+  .card-long-right {
+    width:95%;
+  }
+
+
 
 }
