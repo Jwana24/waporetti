@@ -279,6 +279,72 @@ li#item-5:hover {
   width:40%;
 }
 
+.card-long h3 {
+  display:block;
+  padding:10px;
+}
+
+.card-long h3 {
+  display:block;
+  padding:10px;
+  text-transform: uppercase;
+  font-size:0.9em;
+}
+
+.card-long-1 h3 {
+  color:var(--orange);
+}
+.card-long-2 h3 {
+  color:var(--blue);
+}
+.card-long-3 h3 {
+  color:var(--pink);
+}
+
+/* ---------------------> LEFT PART */
+.stopList {
+  border-left:2px solid #000;
+  margin-left:20px;
+}
+.stopList ul {
+  padding:0;
+  margin:0;
+}
+
+.stopList li {
+  list-style: none;
+  padding:10px 5px;
+  margin:0 0 0 12px;
+  position:relative;
+  font-size:0.9em;
+}
+.stopList li::before {
+  position:absolute;
+  display:block;
+  content:' ';
+  height:8px;
+  width:8px;
+  border-radius: 50%;
+  left:0;
+  top:50%;
+  margin-top:-9px;
+  margin-left:-22px;
+  border:5px solid #000;
+}
+
+.stopList1 li::before {
+  background-color: var(--orange);
+}
+
+.stopList2 li::before {
+  background-color: var(--blue);
+}
+
+.stopList3 li::before {
+  background-color: var(--pink);
+}
+
+
 
 
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
