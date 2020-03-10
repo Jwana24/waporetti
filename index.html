@@ -236,56 +236,81 @@
       <!-- RESERVATIONS Johanna -->
       <section id="reservations">
         <h2>Réservations</h2>
-        <div class="container">
-          <form action="post">
-            <!-- Dropdown -->
-            <div class="container-resa-dropdown-tarifs">
-              <label for="tarifs">Choisissez votre tarif</label>
-              <select name="tarifs" id="tarifs">
-                <option value="ticketJournee">Ticket à la journée</option>
-                <option value="aboHebdo">Abonnement hebdomadaire</option>
-                <option value="aboAnnuel">Abonnement annuel</option>
-              </select>
-            </div>
+        <form class="container-resa container-column" action="post">
+          <!-- Dropdown -->
+          <div class="container-resa-dropdown-tarifs container">
+            <label for="tarifs">Choisissez votre tarif</label>
+            <select name="tarifs" id="tarifs">
+              <option value="ticketJournee">Ticket à la journée</option>
+              <option value="aboHebdo">Abonnement hebdomadaire</option>
+              <option value="aboAnnuel">Abonnement annuel</option>
+            </select>
+          </div>
 
-            <!-- Boutons radio -->
-            <div class="container-resa-button-radio">
-              <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
-              <label for="demandeurEmploi">Demandeur d'emploi</label>
-              <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
-              <label for="etudiant">Etudiant</label>
-            </div>
-            
+          <!-- Boutons radio -->
+          <div class="container-resa-button-radio">
+            <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
+            <label for="demandeurEmploi">Demandeur d'emploi</label>
+            <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
+            <label for="etudiant">Etudiant</label>
+          </div>
+          
+          <div class="container container-column">
             <!-- Coordonnees de la personne -->
-            <div class="container-resa-coordonnees">
-              <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom" required>
-              <label for="prenom">Prénom</label>
-              <input type="text" name="prenom" id="prenom" required>
+            <!-- Partie nom et prénom -->
+            <div class="container-resa-coordonnees-nom-prenom container-row">
+              <div class="container-resa-coordonnees-nom container-column">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" placeholder="ex: DUPONT" required>
+              </div>
+  
+              <div class="container-resa-coordonnees-prenom container-column">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="ex: Jean" required>
+              </div>
             </div>
-            <div>
-              <label for="mail">Adresse mail</label>
-              <input type="email" name="mail" id="mail" required>
-              <label for="telephone">Numéro de téléphone</label>
-              <input type="tel" name="telephone" id="telephone" required>
+  
+            <!-- Partie mail et téléphone -->
+            <div class="container-resa-coordonnees-mail-telephone container-row">
+              <div class="container-resa-coordonnees-mail container-column">
+                <label for="mail">Adresse mail</label>
+                <input type="email" name="mail" id="mail" placeholder="exemple@exemple.fr" required>
+              </div>
+  
+              <div class="container-resa-coordonnees-telephone container-column">
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="ex: 0673241399" required>
+              </div>
             </div>
-            <div>
-              <label for="adressePost">Adresse postale</label>
-              <input type="text" name="adressPost1" id="adressPost1">
-              <input type="text" name="adressPost2" id="adressPost2">
+  
+            <!-- Partie adresse postale -->
+            <div class="container-resa-coordonnees-content-adrPost container-row">
+              <div class="container-resa-coordonnees-adrPost container-column">
+                <label for="adressePost">Adresse postale</label>
+                <input type="text" name="adressPost1" placeholder="ex: 36 avenue de la Liberté" id="adressPost1">
+                <input type="text" name="adressPost2" id="adressPost2">
+              </div>
             </div>
-            <div>
-              <label for="codePost">Code postal</label>
-              <input type="text" name="codePost" id="codePost" required>
-              <label for="ville">Ville</label>
-              <input type="text" name="ville" id="ville" required>
+  
+            <!-- Partie code postal et ville -->
+            <div class="container-resa-coordonnees-codePost-ville container-row">
+              <div class="container-resa-coordonnees-codePost container-column">
+                <label for="codePost">Code postal</label>
+                <input type="text" name="codePost" id="codePost" placeholder="ex: 33000" required>
+              </div>
+  
+              <div class="container-resa-coordonnees-ville container-column">
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville" placeholder="ex: BORDEAUX" required>
+              </div>
             </div>
 
             <!-- Bouton envoyer -->
-            <input class="button yellow-bg" type="submit" value="Envoyer">
-
-          </form>
-        </div>
+            <div class="container container-resa-button">
+              <input class="button yellow-bg" type="submit" value="Envoyer">
+            </div>
+          </div>
+        </form>
       </section>
 
       <!-- CONTACT johanna -->

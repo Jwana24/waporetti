@@ -397,8 +397,97 @@ button.buy_button {
 
 /*-------RESERVATIONS-SECTION 4 : JOHANNA--------*/
 
+.container-resa-dropdown-tarifs select{
+    padding: 4px;
+    margin-left: 30px;
+    width: 23%;
+}
 
+.container-resa-dropdown-tarifs{
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
 
+.container-resa-dropdown-tarifs label{
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.container-resa-button-radio{
+    padding-left: 48px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container-resa-coordonnees-nom-prenom,
+.container-resa-coordonnees-mail-telephone,
+.container-resa-coordonnees-adrPost,
+.container-resa-coordonnees-codePost-ville,
+.container-resa-coordonnees-nom,
+.container-resa-coordonnees-prenom,
+.container-resa-coordonnees-mail,
+.container-resa-coordonnees-telephone,
+.container-resa-coordonnees-codePost,
+.container-resa-coordonnees-ville{
+    display: flex;
+}
+
+.container-resa-coordonnees-nom-prenom,
+.container-resa-coordonnees-mail-telephone,
+.container-resa-coordonnees-content-adrPost,
+.container-resa-coordonnees-codePost-ville{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.container-resa-coordonnees-nom,
+.container-resa-coordonnees-prenom,
+.container-resa-coordonnees-mail,
+.container-resa-coordonnees-telephone,
+.container-resa-coordonnees-codePost,
+.container-resa-coordonnees-ville{
+    padding: 5px;
+    width: 50%;
+}
+
+.container-resa-coordonnees-adrPost input:last-child{
+    margin-top: 10px;
+}
+
+.container-resa-coordonnees-adrPost{
+    padding: 0 5px 0 5px;
+}
+
+.container-resa{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#reservations .container input{
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px #ddd;
+}
+
+#reservations label{
+    font-size: .9rem;
+    padding-bottom: 5px;
+}
+
+#reservations ::placeholder{
+    font-style: italic;
+}
+
+.container-resa-button{
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.container-resa-button input[type=submit]{
+    margin-right: 4px;
+}
 
 
 
