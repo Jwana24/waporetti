@@ -178,13 +178,13 @@ header .large nav, header .large nav ul, header .small nav, header .small nav ul
 
 header .large ul li, header .small ul li {
   list-style: none;
-  padding:20px;
   width:100%;
   text-align: left;
   background: #fff;
   transition:background-color 0.2s linear;
   position:relative;
 }
+
 header .large ul li a i, header .small ul li a i {
   display:inline-block;
   height:100%;
@@ -194,6 +194,7 @@ header .large ul li a i, header .small ul li a i {
   top:0%;
   margin-left:-15px;
   margin-right:10px;
+  padding:20px;
 }
 
 header .large ul li a, header .small ul li a {
@@ -202,7 +203,11 @@ header .large ul li a, header .small ul li a {
   text-decoration: none;
   transition:font-size 0.2s linear;
   font-size:1em;
-}
+  display:block;
+  width:100%;
+  
+  }
+
 
 li#item-1 {
   animation: come_from_right_1 1s linear;
@@ -285,9 +290,9 @@ li#item-5:hover {
 .card-long {
   width:100%;
   min-height:400px;
-  box-shadow:5px 5px 8px #ccc;
+  box-shadow:0px 5px 8px #ccc;
   border:1px solid #ccc;
-  margin-bottom:20px;
+  margin-bottom:40px;
   display:flex;
   flex-direction: row;
   background:#fff;
@@ -356,18 +361,7 @@ thead tr:last-child {
 tr.tableHead td {
   position:relative;
 }
-tr.tableHead td:not(:last-child):not(.ignore)::after {
-  position:absolute;
-  content:' ';
-  display:block;
-  width:7px;
-  height:7px;
-  background:url('../images/arrow_right.svg') no-repeat top left;
-  background-size:contain;
-  right:0;
-  top:50%;
-  margin-top:-3.5px;
-}
+
 
 tbody tr {
   border-top:1px solid #ccc;

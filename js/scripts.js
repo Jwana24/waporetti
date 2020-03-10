@@ -50,14 +50,13 @@ map.scrollWheelZoom.disable();
 /////////  Define styles and icons
 var myStyle = {
     "color": "#f57c00",
-    "weight": 5,
+    "weight": 8,
     "opacity": 0.65
 };
 
 var orangeIcon = L.icon({
     iconUrl: 'images/morange.svg',
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
+    iconSize:     [38, 60], // size of the icon
     iconAnchor:   [19, 60], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
@@ -68,8 +67,10 @@ L.geoJSON(firstWay, {
 }).addTo(map);
 
 /////////  add markers to map
-L.marker([44.841325, -0.563221], {icon:orangeIcon}).addTo(map);
-L.marker([44.877708, -0.534639], {icon:orangeIcon}).addTo(map);
+var marker11 = L.marker([44.841325, -0.563221], {icon:orangeIcon}).addTo(map);
+marker11.bindPopup("<b>Stalingrad</b>");
+var marker12 = L.marker([44.877708, -0.534639], {icon:orangeIcon}).addTo(map);
+marker12.bindPopup("<b>Lormont</b>");
 
 
 
@@ -84,7 +85,7 @@ map2.scrollWheelZoom.disable();
 /////////  Define styles and icons
 var myStyle2 = {
     "color": "#00bcd4",
-    "weight": 5,
+    "weight": 8,
     "opacity": 0.65
 };
 
@@ -102,10 +103,15 @@ L.geoJSON(secondWay, {
 }).addTo(map2);
 
 /////////  add markers to map
-L.marker([44.84163, -0.563221], {icon:blueIcon}).addTo(map2);
-L.marker([44.843394, -0.568972], {icon:blueIcon}).addTo(map2);
-L.marker([44.85021, -0.563307], {icon:blueIcon}).addTo(map2);
-L.marker([44.862135, -0.548716], {icon:blueIcon}).addTo(map2);
+var marker21 = L.marker([44.843394, -0.568972], {icon:blueIcon}).addTo(map2);
+marker21.bindPopup("<b>Stalingrad</b>");
+
+var marker22 = L.marker([44.85021, -0.563307], {icon:blueIcon}).addTo(map2);
+marker22.bindPopup("<b>Stalingrad</b>");
+
+var marker23 = L.marker([44.862135, -0.548716], {icon:blueIcon}).addTo(map2);
+marker23.bindPopup("<b>Stalingrad</b>");
+
 
 
 
@@ -120,7 +126,7 @@ map3.scrollWheelZoom.disable();
 /////////  Define styles and icons
 var myStyle3 = {
     "color": "#e91e63",
-    "weight": 5,
+    "weight": 8,
     "opacity": 0.65
 };
 var pinkIcon = L.icon({
