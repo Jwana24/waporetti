@@ -1054,6 +1054,38 @@ header .small {
     flex-direction:column;
   }
 
+  /*------------------------ CARDS TARIFS (MOBILE) ---------------- */
+
+  /* hide prices description */
+
+  .info_pass {
+    display: none;
+  }
+
+  /* shrink prix_pass */
+  .prix_pass {
+    font-size: 50pt;
+    line-height: normal;
+    margin: -0.2em 0;
+  }
+
+  /* shrink top margin .titre_pass */
+  .titre_pass {
+    margin-top: 0;
+  }
+
+  /* remove hover on card */
+  .price_card:hover {
+    
+  }
+
+  /* remove hover on button */
+  .buy_button {
+    background: var(--green);
+    color: white;
+  }
+
+
   /* ----------------------- SPECIFICITE TRAJETS ET HORAIRES ------ */
 
   .card-long {
