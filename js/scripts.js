@@ -155,3 +155,8 @@ marker34.bindPopup("<b>Bouliac</b>");
 
 var marker35 = L.marker([44.799066,-0.528191], {icon:pinkIcon}).addTo(map3);
 marker35.bindPopup("<b>Bègles</b>");
+
+$(document).ready(function() {
+  marker23.click();
+
+});

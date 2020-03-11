@@ -2,7 +2,7 @@
 
 /*------------GLOBAL CSS-------------*/
 html {
-  max-width:100vw;
+  width:100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -744,8 +744,11 @@ input.container-resa-coordonnees-codePost-ville{
 /* ----------------------- TABLET ----------------------- */
 /* ------------------------------------------------------ */
 @media screen and (max-width: 992px) {
+  body {
+    margin:0;
+  }
   main, footer {
-    width:98%;
+    width:100%;
   }
 
 /* TRANSFORM HEADER FOR BURGER */
@@ -949,8 +952,11 @@ header .small {
 /* ------------------------------------------------------ */
 
 @media screen and (max-width: 600px) {
+  body {
+    margin:0;
+  }
   main, footer {
-    width:98%;
+    width:100%;
   }
 
   /* TRANSFORM HEADER FOR BURGER */
@@ -1090,12 +1096,25 @@ header .small {
 
   /* ADAPT SECTIONS */
   section {
-    width:100%;
+    width:96%;
+    margin-left:2%;
     min-height:100vh;
+  }
+
+  section h2 {
+    font-size:2.2em;
   }
 
   .container-row {
     flex-direction:column;
+  }
+
+  .container {
+    display:flex;
+    width:98%;
+    margin-left:1%;
+    min-height:100%;
+    height:100%;
   }
 
   /*------------------------ CARDS TARIFS (MOBILE) ---------------- */
