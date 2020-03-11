@@ -355,7 +355,7 @@
           <div class="price_card">
             <p class="titre_pass">PASS <br>JOURNALIER</p>
             <p class="prix_pass">€2</p>
-            <p>Lorem ipsum descriptif du pass journalier.</p>
+            <p class="info_pass">Lorem ipsum descriptif du pass journalier.</p>
             <a class="buy_button" href="">ACHETER</a>
           </div>
 
@@ -363,7 +363,7 @@
           <div class="price_card">
             <p class="titre_pass">PASS <br>HEBDOMADAIRE</p>
             <p class="prix_pass">€7</p>
-            <p>Lorem ipsum descriptif du pass hebdomadaire.</p>
+            <p class="info_pass">Lorem ipsum descriptif du pass hebdomadaire.</p>
             <a class="buy_button" href="">ACHETER</a>
           </div>
 
@@ -371,7 +371,7 @@
           <div class="price_card">
             <p class="titre_pass">PASS <br>MENSUEL</p>
             <p class="prix_pass">€20</p>
-            <p>Lorem ipsum descriptif du pass mensuel.</p>
+            <p class="info_pass">Lorem ipsum descriptif du pass mensuel.</p>
             <a class="buy_button" href="">ACHETER</a>
           </div>
 
@@ -380,11 +380,10 @@
 
       <!-- RESERVATIONS Johanna -->
       <section id="reservations">
-        <h2>Réservations</h2>
         <form class="container-resa container-column" action="post">
+          <h2>Réservations</h2>
           <!-- Dropdown -->
-          <div class="select container-resa-dropdown-tarifs container">
-            <!-- <label for="tarifs">Choisissez votre tarif</label> -->
+          <div class="select container container-resa-dropdown-tarifs container">
             <select name="tarifs" id="tarifs">
               <option selected disabled>Choisissez un tarif</option>
               <option value="ticketJournee">Ticket à la journée</option>
@@ -395,11 +394,15 @@
 
 
           <!-- Boutons radio -->
-          <div class="container-resa-button-radio">
-            <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
-            <label for="demandeurEmploi">Demandeur d'emploi</label>
-            <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
-            <label for="etudiant">Etudiant</label>
+          <div class="container-resa-button-radio container">
+            <div>
+              <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
+              <label for="demandeurEmploi">Demandeur d'emploi</label>
+            </div>
+            <div>
+              <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
+              <label for="etudiant">Etudiant</label>
+            </div>
           </div>
 
           <div class="container container-column">
@@ -462,8 +465,8 @@
 
       <!-- CONTACT johanna -->
       <section id="contacts">
-        <h2>Nous contacter</h2>
         <form class="container-contacts container-column" action="post">
+          <h2>Nous contacter</h2>
           <div class="container-contacts">
             <div class="container-contact-person container container-column">
               <!-- Coordonnees de la personne -->
