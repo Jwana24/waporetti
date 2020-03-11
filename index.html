@@ -37,17 +37,18 @@
 
 <header class="">
   <div class="large">
+
       <div class="titleNav">
         <h3>Waporetti</h3>
       </div>
 
       <nav>
         <ul>
-          <li id="item-1" class="scrollTo"><a href="#homePage"><i class="material-icons">keyboard_arrow_right</i> home</a></li>
-          <li id="item-2" class="scrollTo"><a href="#parcours"><i class="material-icons">keyboard_arrow_right</i> parcours et horaires</a></li>
-          <li id="item-3" class="scrollTo"><a href="#tarifs"><i class="material-icons">keyboard_arrow_right</i> tarifs</a></li>
-          <li id="item-4" class="scrollTo"><a href="#reservations"><i class="material-icons">keyboard_arrow_right</i> réservation</a></li>
-          <li id="item-5" class="scrollTo"><a href="#contacts"><i class="material-icons">keyboard_arrow_right</i> contacts</a></li>
+          <li id="item-1" class="scrollTo"><a id="goToHome" data-target="#homePage" onclick="scrollToSection('goToHome');"><i class="material-icons">keyboard_arrow_right</i> home</a></li>
+          <li id="item-2" class="scrollTo"><a id="goToParcours" data-target="#parcours" onclick="scrollToSection('goToParcours');"><i class="material-icons">keyboard_arrow_right</i> parcours et horaires</a></li>
+          <li id="item-3" class="scrollTo"><a id="goTotarifs"  data-target="#tarifs" onclick="scrollToSection('goTotarifs');"><i class="material-icons">keyboard_arrow_right</i> tarifs</a></li>
+          <li id="item-4" class="scrollTo"><a id="goToreservations" data-target="#reservations" onclick="scrollToSection('goToreservations');"><i class="material-icons">keyboard_arrow_right</i> réservation</a></li>
+          <li id="item-5" class="scrollTo"><a id="goTocontacts" data-target="#contacts" onclick="scrollToSection('goTocontacts');"><i class="material-icons">keyboard_arrow_right</i> contacts</a></li>
         </ul>
       </nav>
 
@@ -522,8 +523,6 @@
     </footer>
 
   </body>
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
 
   </script>
   <script type="text/javascript" src="js/w1.js"></script>

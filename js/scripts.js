@@ -1,20 +1,14 @@
-// Show an element
-$(document).ready (function() {
 
+function scrollToSection(elem) {
+    let clicked = document.getElementById(elem);
+    let target = clicked.getAttribute('data-target');
+    target=target.split('#');
+    target=target[1];
+    let destination = document.getElementById(target);
+    let top = destination.offsetTop - 45;
+    window.scrollTo(0, top);
+}
 
-  $('.scrollTo').click(function() {
-    $target = $(this).find('a').attr('href');
-    $topScroll=$($target).offset().top;
-    $topScroll-=45;
-    $("html, body").animate({scrollTop:$topScroll}, 400);
-    $('#menu-burger').css('margin-left', '110vw');
-    $('.burgerMenu').html('<i class="material-icons">menu</i>');
-    $('.burgerMenu').addClass('show');
-  });
-
-
-
-});
 
 function burger() {
   var menu = document.getElementById('menu-burger');
