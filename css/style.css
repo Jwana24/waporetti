@@ -736,6 +736,50 @@ input.container-resa-coordonnees-codePost-ville{
 
 /*---------------FOOTER---------------*/
 
+footer h3{
+  font-family: 'Lobster';
+  color: var(--blue);
+}
+
+footer .container-content-list{
+  width: 90%;
+  margin-left: 60px;
+}
+
+footer .container-content-list ul{
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+footer .container-content-list li{
+  list-style: none;
+}
+
+footer .container-content-list li:last-child{
+  width: 43%;
+}
+
+footer .container-content-list li:nth-child(2){
+  width: 27%;
+}
+
+.border-footer{
+  border-left: 1px solid grey;
+  text-align: right;
+}
+
+footer .container-content-list a{
+  text-decoration: none;
+  color: grey;
+}
+
+footer .container-content-list a:hover{
+  text-decoration: underline;
+  color: black;
+}
 
 
 /*---------------MEDIA QUERIES---------------*/
@@ -1192,11 +1236,6 @@ header .small {
 
   .container-contacts .container{
     margin-left: 0;
-  }
-
-  .container-contact-company h4,
-  .container-contact-company p{
-    text-align: center;
   }
 
 
