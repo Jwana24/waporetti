@@ -5,29 +5,42 @@ $(document).ready (function() {
   $('.scrollTo').click(function() {
     $target = $(this).find('a').attr('href');
     $topScroll=$($target).offset().top;
+    $topScroll-=45;
     $("html, body").animate({scrollTop:$topScroll}, 400);
     $('#menu-burger').css('margin-left', '110vw');
     $('.burgerMenu').html('<i class="material-icons">menu</i>');
     $('.burgerMenu').addClass('show');
   });
 
-  $(document).on('click', '.burgerMenu', function(e) {
-    e.preventDefault();
-    $this=$(this);
-    if ($this.hasClass('show')) {
-      $this.removeClass('show');
-      $('#menu-burger').css('margin-left', '0px');
-      $this.html('<i class="material-icons">close</i>');
 
-    }
-    else {
-      $('#menu-burger').css('margin-left', '110vw');
-      $this.html('<i class="material-icons">menu</i>');
-      $this.addClass('show');
-    }
-  });
 
 });
+
+function burger() {
+  var menu = document.getElementById('menu-burger');
+  var button = document.getElementById('burger-button');
+  var classButton = button.className;
+
+  console.log(classButton);
+  if (classButton == 'burgerMenu show') {
+    menu.style.marginLeft='0px';
+    button.className='burgerMenu hide';
+    button.innerHTML='<i class="material-icons">close</i>';
+  }
+  if (classButton == 'burgerMenu hide') {
+    menu.style.marginLeft='110vw';
+    button.className='burgerMenu show';
+    button.innerHTML='<i class="material-icons">menu</i>';
+  }
+}
+
+function hideBurger() {
+  var menu = document.getElementById('menu-burger');
+  var button = document.getElementById('burger-button');
+    menu.style.marginLeft='110vw';
+    button.className='burgerMenu show';
+    button.innerHTML='<i class="material-icons">menu</i>';
+}
 
 //////////////////////////////////////////////////////////////////
 // CARTES ////////////////////////////////////////////////////////

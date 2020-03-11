@@ -60,18 +60,22 @@
             <h3>Waporetti</h3>
           </div>
           <div class="burgerZone">
-            <a class="burgerMenu show" href="#"><i class="material-icons">menu</i></a>
+            <a class="burgerMenu show" id="burger-button" onClick='burger();'><i class="material-icons">menu</i></a>
           </div>
       </div>
 
       <nav id="menu-burger">
+        <span class="bottomNav"><span class="firstLetter">W</span><span class="othersLetters">aporetti</span></span>
+
         <ul>
-          <li class="scrollTo"><a href="#homePage"><i class="material-icons">keyboard_arrow_right</i> home</a></li>
-          <li class="scrollTo"><a href="#parcours"><i class="material-icons">keyboard_arrow_right</i> parcours et horaires</a></li>
-          <li class="scrollTo"><a href="#tarifs"><i class="material-icons">keyboard_arrow_right</i> tarifs</a></li>
-          <li class="scrollTo"><a href="#reservations"><i class="material-icons">keyboard_arrow_right</i> réservation</a></li>
-          <li class="scrollTo"><a href="#contacts"><i class="material-icons">keyboard_arrow_right</i> contacts</a></li>
+          <li class="scrollTo"><a href="#homePage" onclick="hideBurger();"><i class="material-icons blue-text">keyboard_arrow_right</i> home</a></li>
+          <li class="scrollTo"><a href="#parcours" onclick="hideBurger();"><i class="material-icons orange-text">keyboard_arrow_right</i> parcours et horaires</a></li>
+          <li class="scrollTo"><a href="#tarifs" onclick="hideBurger();"><i class="material-icons green-text">keyboard_arrow_right</i> tarifs</a></li>
+          <li class="scrollTo"><a href="#reservations" onclick="hideBurger();"><i class="material-icons yellow-text">keyboard_arrow_right</i> réservation</a></li>
+          <li class="scrollTo"><a href="#contacts" onclick="hideBurger();"><i class="material-icons red-text">keyboard_arrow_right</i> contacts</a></li>
         </ul>
+
+
       </nav>
     </div>
 </header>

@@ -251,6 +251,10 @@ li#item-5 a i  {
 
 header .large ul li:hover a, header .large ul li:hover a i, header .small ul li:hover a, header .small ul li:hover a i {
   font-size: 1.2em;
+  color:#fff;
+}
+
+header .large ul li:hover a i {
   color:#fff !important;
 }
 
@@ -674,7 +678,7 @@ header .small {
     height:40px;
     width:100%;
     left:0;
-    z-index:99;
+    z-index:102;
     top:0;
     background:#fff;
     box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
@@ -690,6 +694,7 @@ header .small {
   header .small .titleNav h3 {
     color:var(--blue);
     margin-top:5px;
+    text-align:left;
   }
 
   header .small .top .burgerMenu {
@@ -705,6 +710,7 @@ header .small {
 
   a.burgerMenu:hover {
     background:var(--blue);
+    cursor:pointer;
   }
 
   /* LE MENU ISSU DU BURGER */
@@ -723,21 +729,49 @@ header .small {
       transition:all 0.5s linear;
       margin-left:110vw;
     }
-    header .small ul {
+    header .small nav ul {
       margin:0;
       padding:0;
-      width:100%;
+      margin-left:40%;
+      background:none;
     }
+
     header .small nav h3 {
       position:absolute;
       top:0px;
       left:10px;
       color:var(--blue);
       font-family: "Lobster";
+
     }
+
     header .small nav li {
-      text-align:center;
+      text-align:left;
+      position: relative;
+      padding:0;
+      background:none;
+
     }
+
+    header .small nav li a {
+      padding:20px 0px;
+      font-size:1.2em;
+    }
+    header .small nav li a i {
+      padding:0px;
+      font-size:1.2em;
+    }
+    header .small nav li a:hover {
+      color:#999;
+      padding:20px 0px;
+      font-size:1.2em;
+    }
+    header .small nav li a:hover i {
+      color:#999;
+      padding:0;
+      font-size:1.2em;
+    }
+
     a.closeMenu {
       position:absolute;
       top:20px;
@@ -750,7 +784,17 @@ header .small {
       animation: none;
     }
 
-
+    .bottomNav {
+      display:block;
+      position:absolute;
+      bottom:40%;
+      width:100%;
+      font-size:800%;
+      color:var(--blue);
+      opacity: 0.1;
+      text-align:center;
+      font-family: Lobster;
+    }
 
 
 /* ADAPT SECTIONS */
@@ -815,7 +859,7 @@ header .small {
       height:40px;
       width:100%;
       left:0;
-      z-index:99;
+      z-index:102;
       top:0;
       background:#fff;
       box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
@@ -831,6 +875,7 @@ header .small {
     header .small .titleNav h3 {
       color:var(--blue);
       margin-top:5px;
+      text-align:left;
     }
 
     header .small .top .burgerMenu {
@@ -846,6 +891,7 @@ header .small {
 
     a.burgerMenu:hover {
       background:var(--blue);
+      cursor:pointer;
     }
 
 
@@ -864,10 +910,11 @@ header .small {
     transition:all 0.5s linear;
     margin-left:110vw;
   }
-  header .small ul {
+  header .small nav ul {
     margin:0;
     padding:0;
-    width:100%;
+    margin-left:25%;
+    background:none;
   }
   header .small nav h3 {
     position:absolute;
@@ -875,10 +922,36 @@ header .small {
     left:10px;
     color:var(--blue);
     font-family: "Lobster";
+
   }
+
   header .small nav li {
-    text-align:center;
+    text-align:left;
+    position: relative;
+    padding:0;
+    background:none;
+
   }
+
+  header .small nav li a {
+    padding:20px 0px;
+    font-size:1.2em;
+  }
+  header .small nav li a i {
+    padding:0px;
+    font-size:1.2em;
+  }
+  header .small nav li a:hover {
+    color:#999;
+    padding:20px 0px;
+    font-size:1.2em;
+  }
+  header .small nav li a:hover i {
+    color:#999;
+    padding:0;
+    font-size:1.2em;
+  }
+
   a.closeMenu {
     position:absolute;
     top:20px;
@@ -891,6 +964,20 @@ header .small {
     animation: none;
   }
 
+  .bottomNav {
+    display:block;
+    position:absolute;
+    bottom:30%;
+    width:100%;
+    font-size:1500%;
+    color:var(--blue);
+    opacity: 0.1;
+    text-align:center;
+    font-family: Lobster;
+  }
+  .bottomNav .othersLetters {
+    display:none;
+  }
 
   /* ADAPT SECTIONS */
   section {
