@@ -474,6 +474,7 @@ to blue-bg/no-border/white-text*/
   border: 1px solid var(--green);
   padding: 20px;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 .price_card:hover{
@@ -498,16 +499,21 @@ to blue-bg/no-border/white-text*/
 }
 
 .buy_button {
-  background: var(--green);
-  color: white;
+  color: var(--green);
   text-decoration: none;
   font-size: 16px;
   font-weight: 700;
   margin-top: 20px;
   padding: 20px 60px;
   border-radius: 40px;
+  border: 1px solid var(--green);
+  transition: 0.3s;
 }
 
+.buy_button:hover {
+  background: var(--green);
+  color: white;
+}
 
 /*-------RESERVATIONS-SECTION 4 : JOHANNA--------*/
 
