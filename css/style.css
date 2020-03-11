@@ -474,7 +474,7 @@ to blue-bg/no-border/white-text*/
   text-align: center;
   height: 100%;
   margin: 10px;
-  border: 1px solid var(--green);
+  border: 1px solid silver;
   padding: 20px;
   box-sizing: border-box;
   transition: 0.3s;
@@ -485,20 +485,21 @@ to blue-bg/no-border/white-text*/
   border: 1px solid hsla(0, 0%, 100%, 0);
 }
 
-.price_card p{
-  color: var(--green);
-  font-family: Roboto;
-}
-
 .titre_pass {
+  color: var(--green);
   font-size: 20pt;
   letter-spacing: 0.1em; /* increases spacing between relative to font size */
 }
 
 .prix_pass {
+  color: hsl(93, 100%, 28%);
   font-size: 70pt;
   font-weight: 500;
   line-height: 0.1; /* decreases spacing between lines */
+}
+
+.info_pass {
+  color: dimgray;
 }
 
 .buy_button {
@@ -1118,7 +1119,7 @@ header .small {
   /* remove hover on card */
   .price_card:hover{
     box-shadow: none;
-    border: 1px solid var(--green);
+    border: 1px solid silver;
   }
 
   /* remove hover on button */
