@@ -184,7 +184,7 @@ header .large ul li, header .small ul li {
   width:100%;
   text-align: left;
   background: #fff;
-  transition:background-color 0.2s linear;
+  transition:all 0.2s linear;
   position:relative;
 }
 
@@ -208,11 +208,11 @@ header .large ul li a, header .small ul li a {
   font-size:1em;
   display:block;
   width:100%;
+}
 
-  }
-  header .large ul li a:hover {
+header .large ul li a:hover {
     cursor:pointer;
-  }
+}
 
 
 li#item-1 {
