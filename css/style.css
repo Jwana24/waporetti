@@ -656,12 +656,25 @@ to blue-bg/no-border/white-text*/
     margin-right: 4px;
 }
 
+input.container-resa-coordonnees-mail-telephone:invalid,
+input.container-resa-coordonnees-content-adrPost:invalid,
+input.container-resa-coordonnees-codePost-ville{
+  box-shadow: 0 0 2px 1px green;
+}
+
+input.container-resa-coordonnees-mail-telephone:invalid,
+input.container-resa-coordonnees-content-adrPost:invalid,
+input.container-resa-coordonnees-codePost-ville{
+  box-shadow: 0 0 2px 1px red;
+}
+
 /*-------CONTACTS-SECTION 5 : JOHANNA-------*/
 
 .container-contacts{
     display: flex;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-top: 65px;
 }
 
 #contacts .container input,
@@ -710,8 +723,6 @@ to blue-bg/no-border/white-text*/
   width: 100%;
   justify-content: flex-end;
 }
-
-
 
 
 /*---------------FOOTER---------------*/
