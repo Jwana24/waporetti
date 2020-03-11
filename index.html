@@ -382,8 +382,7 @@
         <h2>Réservations</h2>
         <form class="container-resa container-column" action="post">
           <!-- Dropdown -->
-          <div class="select container-resa-dropdown-tarifs container">
-            <!-- <label for="tarifs">Choisissez votre tarif</label> -->
+          <div class="select container container-resa-dropdown-tarifs container">
             <select name="tarifs" id="tarifs">
               <option selected disabled>Choisissez un tarif</option>
               <option value="ticketJournee">Ticket à la journée</option>
@@ -394,11 +393,15 @@
 
 
           <!-- Boutons radio -->
-          <div class="container-resa-button-radio">
-            <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
-            <label for="demandeurEmploi">Demandeur d'emploi</label>
-            <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
-            <label for="etudiant">Etudiant</label>
+          <div class="container-resa-button-radio container">
+            <div>
+              <input type="radio" name="type-tarif" id="demandeurEmploi" value="DemandeurEmploi">
+              <label for="demandeurEmploi">Demandeur d'emploi</label>
+            </div>
+            <div>
+              <input type="radio" name="type-tarif" id="etudiant" value="Etudiant">
+              <label for="etudiant">Etudiant</label>
+            </div>
           </div>
 
           <div class="container container-column">

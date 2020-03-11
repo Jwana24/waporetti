@@ -513,7 +513,7 @@ to blue-bg/no-border/white-text*/
 
 /* Select custom */
 /* Reset Select */
-select {
+#reservations select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -525,22 +525,21 @@ select {
   background-image: none;
 }
 /* Remove IE arrow */
-select::-ms-expand {
+#reservations select::-ms-expand {
   display: none;
 }
 /* Custom Select */
-.select {
+#reservations .select {
   position: relative;
   display: flex;
-  width: 25%;
+  width: 50%;
   height: 50px;
   line-height: 3;
   background: var(--yellow);
   overflow: hidden;
   border-radius: .25em;
-  margin-left: 53px;
 }
-select {
+#reservations select {
   flex: 1;
   padding: 0 .5em;
   color: black;
@@ -563,13 +562,15 @@ select {
 .select:hover::after {
   color: white;
 }
+.select option{
+  font-size: 2rem;
+}
 /* Fin select custom */
 
 
 .container-resa-dropdown-tarifs select{
     padding: 4px;
     margin-left: 30px;
-    width: 23%;
 }
 
 .container-resa-dropdown-tarifs{
@@ -583,9 +584,12 @@ select {
 }
 
 .container-resa-button-radio{
-    padding-left: 48px;
     margin-bottom: 20px;
     width: 100%;
+}
+
+.container-resa-button-radio div:last-child{
+  margin-left: 40px;
 }
 
 .container-flex{
@@ -866,6 +870,8 @@ header .small {
     flex-direction:column;
   }
 
+
+
   /* ----------------------- SPECIFICITE TRAJETS ET HORAIRES ------ */
 
   .card-long {
@@ -888,6 +894,27 @@ header .small {
   }
   .card-long-right {
     width:95%;
+  }
+
+
+  /* RESPONSIVE FORM RESERVATIONS */
+
+  .container-resa-coordonnees-nom,
+  .container-resa-coordonnees-prenom,
+  .container-resa-coordonnees-mail,
+  .container-resa-coordonnees-telephone,
+  .container-resa-coordonnees-codePost,
+  .container-resa-coordonnees-ville{
+      width: 100%;
+  }
+
+  .container-resa-button {
+      margin-left: 10px;
+  }
+
+  #reservations .select{
+    width: 50%;
+    margin-left: 38px;
   }
 
 
@@ -1072,6 +1099,30 @@ header .small {
     width:95%;
   }
 
+  /* RESPONSIVE MOBILE FORM RESERVATIONS */
+
+  #reservations .select{
+    width: 90%;
+    margin-left: 32px;
+  }
+
+
+
+  /* RESPONSIVE MOBILE FORM CONTACTS */
+
+  .container-contacts{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-contacts .container{
+    margin-left: 0;
+  }
+
+  .container-contact-company h4,
+  .container-contact-company p{
+    text-align: center;
+  }
 
 
 }
