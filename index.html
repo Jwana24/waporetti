@@ -350,8 +350,6 @@
         <h2>tarifs</h2>
         <div class="container container-row" >
 
-          <!--TO-DO: change button to <a> to keep same throughout the site-->
-
           <!--Card Pass Journalier-->
           <div class="price_card">
             <p class="titre_pass">PASS <br>JOURNALIER</p>
@@ -384,9 +382,10 @@
         <h2>Réservations</h2>
         <form class="container-resa container-column" action="post">
           <!-- Dropdown -->
-          <div class="container-resa-dropdown-tarifs container">
-            <label for="tarifs">Choisissez votre tarif</label>
+          <div class="select container-resa-dropdown-tarifs container">
+            <!-- <label for="tarifs">Choisissez votre tarif</label> -->
             <select name="tarifs" id="tarifs">
+              <option selected disabled>Choisissez un tarif</option>
               <option value="ticketJournee">Ticket à la journée</option>
               <option value="aboHebdo">Abonnement hebdomadaire</option>
               <option value="aboAnnuel">Abonnement annuel</option>
