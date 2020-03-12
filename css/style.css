@@ -116,7 +116,23 @@ section h2 {
   font-family: Roboto;
   text-transform: uppercase;
   font-weight: 100;
-  color:#999;
+  opacity:0.6;
+}
+
+#parcours h2 {
+  color:var(--orange);
+}
+
+#tarifs h2 {
+  color:var(--green);
+}
+
+#reservations h2 {
+  color:var(--yellow);
+}
+
+#contacts h2 {
+  color:var(--red);
 }
 
 .center-align {
@@ -335,12 +351,16 @@ width: 50%;
 .card-long {
   width:100%;
   min-height:400px;
-  box-shadow:0px 5px 8px #ccc;
-  border:1px solid #ccc;
+  border:1px solid var(--orange);
   margin-bottom:40px;
   display:flex;
   flex-direction: row;
   background:#fff;
+}
+
+.card-long:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border: 1px solid hsla(0, 0%, 100%, 0);
 }
 
 .card-long-left {
@@ -448,9 +468,6 @@ tbody tr:hover {
   margin:0;
 }
 
-.TableNavTimes tr {
-
-}
 
 .TableNavTimes tr:hover {
   background:none;
