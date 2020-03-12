@@ -293,4 +293,15 @@ header .small {
 
 
 
+/* ----------------------- PARTIE HOME PAGE GUILLAUME --------------------------- */
+
+.homepageSpecs p {
+
+  column-count: 2;
+  column-width: 50%;
+    color: white;
+  width: 100%;
+  }
+
+
 }
