@@ -298,13 +298,13 @@ li#item-5:hover {
 
 /*-------HOMEPAGE-SECTION 1 : GUILLAUME--------*/
 h1 {
-  font-size: 7em;
-  color: var(--pink);
+  font-size: 7rem;
+  color: white;
   text-align: center;
   font-family: "Lobster";
 }
 p{
-  font-size: 1.2em;
+  font-size: 1rem;
 
 }
 
