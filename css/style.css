@@ -15,7 +15,10 @@ body {
   font-size:1rem;
   --blue : #00bcd4;
   --orange : #f57c00;
-  --green : #8bc34a;
+  --green : rgba(106,210,170,1);
+  --moss : rgba(106,210,170,1);
+  --darkmoss : rgba(57,146,110,1);
+  --lightmoss : rgba(139,234,193,1);
   --pink : #e91e63;
   --red :  #f44336;
   --yellow : #ffc107;
@@ -561,6 +564,12 @@ tbody tr:hover {
 /*  - Dark Green : rgba(57,146,110,1)
     - Green : rgba(106,210,170,1)
     - Light Green : rgba(139,234,193,1)
+    
+    --moss : rgba(106,210,170,1);
+    --darkmoss : rgba(57,146,110,1);
+
+    var(--moss)
+    var(--darkmoss)
     */
 
 .price_card {
@@ -571,7 +580,7 @@ tbody tr:hover {
   text-align: center;
   height: 100%;
   margin: 10px;
-  border: 1px solid silver;
+  border: 1px solid var(--lightmoss);
   padding: 20px;
   box-sizing: border-box;
   transition: 0.3s;
@@ -583,36 +592,36 @@ tbody tr:hover {
 }
 
 .titre_pass {
-  color: var(--green);
+  color:var(--darkmoss);
   font-size: 1.5rem;
   letter-spacing: 0.2rem; /* increases spacing between relative to font size */
 }
 
 .prix_pass {
-  color: hsl(88, 45%, 45%);
+  color: var(--moss);
   font-size: 6rem;
   font-weight: 500;
-  line-height: 0.1; /* decreases spacing between lines */
+  margin: 20px 0;
 }
 
 .info_pass {
-  color: dimgray;
+  color:var(--darkmoss);
 }
 
 .buy_button {
-  color: var(--green);
+  color: var(--moss);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
   margin-top: 20px;
   padding: 20px 60px;
   border-radius: 40px;
-  border: 1px solid var(--green);
+  border: 1px solid var(--moss);
   transition: 0.3s;
 }
 
 .buy_button:hover {
-  background: var(--green);
+  background: var(--moss);
   color: white;
 }
 
@@ -1320,13 +1329,13 @@ header .small {
   /* remove hover on card */
   .price_card:hover{
     box-shadow: none;
-    border: 1px solid silver;
+    border: 1px solid var(--lightmoss);
   }
 
   /* remove hover on button */
   .buy_button {
     padding: 12px 80px;
-    background: var(--green);
+    background: var(--moss);
     color: white;
   }
 
