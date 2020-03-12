@@ -558,8 +558,10 @@ tbody tr:hover {
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
 
 
-/* TO-DO: hover button from white-bg/blue-border/blue-text
-to blue-bg/no-border/white-text*/
+/*  - Dark Green : rgba(57,146,110,1)
+    - Green : rgba(106,210,170,1)
+    - Light Green : rgba(139,234,193,1)
+    */
 
 .price_card {
   flex: 1;
@@ -582,13 +584,13 @@ to blue-bg/no-border/white-text*/
 
 .titre_pass {
   color: var(--green);
-  font-size: 20pt;
-  letter-spacing: 0.1em; /* increases spacing between relative to font size */
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem; /* increases spacing between relative to font size */
 }
 
 .prix_pass {
-  color: hsl(93, 100%, 28%);
-  font-size: 70pt;
+  color: hsl(88, 45%, 45%);
+  font-size: 6rem;
   font-weight: 500;
   line-height: 0.1; /* decreases spacing between lines */
 }
@@ -600,7 +602,7 @@ to blue-bg/no-border/white-text*/
 .buy_button {
   color: var(--green);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 20px;
   padding: 20px 60px;
@@ -746,6 +748,7 @@ to blue-bg/no-border/white-text*/
 
 #reservations ::placeholder{
     font-style: italic;
+    font-size: .8rem;
 }
 
 .container-resa-button{
@@ -793,9 +796,8 @@ input.container-resa-coordonnees-codePost-ville{
 }
 
 #contacts ::placeholder{
-    font-family: 'Roboto';
     font-style: italic;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .container-contacts-coordonnees-nom,
@@ -1106,6 +1108,19 @@ header .small {
   }
 
 
+  /* RESPONSIVE TABLET FOOTER */
+
+  footer .container-content-list li:nth-child(2),
+  footer .container-content-list li:last-child{
+    width: initial;
+    padding-left: 50px;
+  }
+
+  form .container-contacts{
+    margin-top: 50px;
+  }
+
+
 
 }
 
@@ -1282,6 +1297,9 @@ header .small {
   /*------------------------ CARDS TARIFS (MOBILE) ---------------- */
 
   /* hide prices description */
+  .line_break {
+    display: none;
+  }
 
   .info_pass {
     display: none;
@@ -1289,14 +1307,14 @@ header .small {
 
   /* shrink prix_pass */
   .prix_pass {
-    font-size: 50pt;
+    font-size: 4rem;
     line-height: normal;
     margin: -0.2em 0;
   }
 
   /* shrink top margin .titre_pass */
   .titre_pass {
-    margin-top: 0;
+    margin: 0 0 12px 0;
   }
 
   /* remove hover on card */
@@ -1307,6 +1325,7 @@ header .small {
 
   /* remove hover on button */
   .buy_button {
+    padding: 12px 80px;
     background: var(--green);
     color: white;
   }
@@ -1377,6 +1396,46 @@ header .small {
 
   .container-contacts .container{
     margin-left: 0;
+  }
+
+
+  /* RESPONSIVE MOBILE FOOTER */
+
+  footer div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  footer div:last-child{
+    padding-bottom: 20px;
+  }
+
+  footer .container-content-list{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer .container-content-list ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 40px;
+  }
+
+  footer .container-content-list li{
+    border-left: none;
+    width: 100%!important;
+    text-align: center;
+  }
+
+  footer .container-content-list a:hover{
+    text-decoration: none;
+    color: grey;
   }
 
 
