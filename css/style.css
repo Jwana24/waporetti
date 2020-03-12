@@ -5,7 +5,11 @@ html {
   width:100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+<<<<<<< HEAD
   font-size:17px;
+=======
+  -webkit-scrolling: touch;
+>>>>>>> feat/js
 }
 
 body {
@@ -561,6 +565,7 @@ tbody tr:hover {
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
 
 
+<<<<<<< HEAD
 /*  - Dark Green : rgba(57,146,110,1)
     - Green : rgba(106,210,170,1)
     - Light Green : rgba(139,234,193,1)
@@ -571,6 +576,10 @@ tbody tr:hover {
     var(--moss)
     var(--darkmoss)
     */
+=======
+/* TO-DO: hover button from white-bg/blue-border/blue-text
+to blue-bg/no-border/white-text*/
+>>>>>>> feat/js
 
 .price_card {
   flex: 1;

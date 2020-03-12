@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 function scrollToSection(elem) {
     let clicked = document.getElementById(elem);
@@ -7,6 +8,23 @@ function scrollToSection(elem) {
     let destination = document.getElementById(target);
     let top = destination.offsetTop - 45;
     window.scrollTo(0, top);
+=======
+
+function scrollToSection(elem) {
+    let clicked = document.getElementById(elem);
+    let target = clicked.getAttribute('data-target');
+    target=target.split('#');
+    target=target[1];
+    let destination = document.getElementById(target);
+    let top = destination.offsetTop - 45;
+
+    window.scrollTo(0, top);
+    while(window.scrollY != top) {
+      console.log(window.scrollTop);
+    }
+
+
+>>>>>>> feat/js
 }
 
 
