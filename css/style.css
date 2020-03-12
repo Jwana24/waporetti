@@ -561,16 +561,7 @@ tbody tr:hover {
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
 
 
-/*  - Dark Green : rgba(57,146,110,1)
-    - Green : rgba(106,210,170,1)
-    - Light Green : rgba(139,234,193,1)
-    
-    --moss : rgba(106,210,170,1);
-    --darkmoss : rgba(57,146,110,1);
 
-    var(--moss)
-    var(--darkmoss)
-    */
 #tarifs h2 {
   margin-bottom: 20px;
 }
@@ -626,6 +617,7 @@ tbody tr:hover {
 .buy_button:hover {
   background: var(--moss);
   color: white;
+  cursor: pointer;
 }
 
 /*-------RESERVATIONS-SECTION 4 : JOHANNA--------*/
@@ -1098,7 +1090,38 @@ header .small {
     font-size:1.2em;
   }
 
+  /*------------------------ CARDS TARIFS (TABLETS) ---------------- */
 
+  
+  .line_break {
+    display: none;
+  }
+
+  /* shrink prix_pass */
+  .prix_pass {
+    font-size: 5rem;
+    line-height: normal;
+    margin: -0.2em 0;
+  }
+
+  /* shrink top margin .titre_pass */
+  .titre_pass {
+    margin: 0 0 12px 0;
+  }
+
+  /* remove hover on card */
+  .price_card:hover{
+    box-shadow: none;
+    border: 1px solid var(--lightmoss);
+  }
+
+  /* remove hover on button */
+  .buy_button {
+    margin-top: 0;
+    padding: 12px 80px;
+    background: var(--moss);
+    color: white;
+  }
   /* RESPONSIVE FORM RESERVATIONS */
 
   .container-resa-coordonnees-nom,
