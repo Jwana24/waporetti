@@ -1,7 +1,7 @@
 @import "animations.css";
 
 /*------------GLOBAL CSS-------------*/
-html {
+html { 
   width:100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -306,7 +306,7 @@ p{
 }
 
 section#homePage {
-  background: url('https://media.istockphoto.com/photos/view-on-bordeaux-in-the-evening-france-picture-id507451213') no-repeat center center;
+  background: url('http://bordeauxcanoe.com/wp-content/uploads/2014/10/100_0835.jpg') no-repeat center center;
 background-size: cover;
 }
 .homepageSpecs{
@@ -314,7 +314,9 @@ background-size: cover;
   height: 100%;
 }
 .homepageSpecs p {
-  display: block;
+  
+column-count: 2;
+column-width: 50%;
   color: white;
 width: 50%;
 }
