@@ -168,14 +168,14 @@ header .titleNav {
   position:absolute;
   top:0;
   width:100%;
-  font-size:0.8em;
+  font-size:0.8rem;
   margin-left:10px;
   animation:come_from_top 1s linear;
   text-align:center;
 }
 
 header .titleNav h3 {
-  font-size:1.7em;
+  font-size:1.7rem;
   font-family: 'Lobster';
   margin-bottom:0;
   color:var(--blue);
@@ -212,7 +212,7 @@ header .large ul li a, header .small ul li a {
   color:#888;
   text-decoration: none;
   transition:font-size 0.2s linear;
-  font-size:1em;
+  font-size:1rem;
   display:block;
   width:100%;
 }
@@ -262,7 +262,7 @@ li#item-5 a i  {
 /* ----- > Hover */
 
 header .large ul li:hover a, header .large ul li:hover a i, header .small ul li:hover a, header .small ul li:hover a i {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color:#fff;
 }
 
@@ -343,7 +343,7 @@ li#item-5:hover {
   display:block;
   padding:10px;
   text-transform: uppercase;
-  font-size:0.9em;
+  font-size:0.9rem;
 }
 
 .card-long-1 h3 {
@@ -365,7 +365,7 @@ li#item-5:hover {
 }
 
 .card-long thead td:not(.normal) {
-  font-size:0.8em;
+  font-size:0.8rem;
   font-weight: 500;
 }
 
@@ -373,7 +373,7 @@ li#item-5:hover {
 thead tr:last-child {
   height:35px;
   vertical-align: middle;
-  font-size:0.9em;
+  font-size:0.9rem;
 }
 tr.tableHead td {
   position:relative;
@@ -383,7 +383,7 @@ tr.tableHead td {
 tbody tr {
   border-top:1px solid #ccc;
   height:30px;
-  font-size:0.8em;
+  font-size:0.8rem;
   color:#999;
   transition:all 0.3s linear;
 }
@@ -475,7 +475,7 @@ tbody tr:hover {
   padding:10px 5px;
   margin:0 0 0 12px;
   position:relative;
-  font-size:0.9em;
+  font-size:0.9rem;
 }
 .stopList li:hover {
   font-weight:400;
@@ -511,14 +511,14 @@ tbody tr:hover {
 .alertLine {
   width:calc(100% - 10px);
   margin-top:40px;
-  font-size:0.9em;
+  font-size:0.9rem;
   padding:10px;
   text-align:left;
   background-color: var(--red);
 }
 
 .alertLine .titleAlert {
-  font-size:1.2em;
+  font-size:1.2rem;
   font-weight: bold;
   color:rgba(0,0,0,0.7);
   margin:0;
@@ -856,6 +856,9 @@ footer .container-content-list a:hover{
 /* ----------------------- TABLET ----------------------- */
 /* ------------------------------------------------------ */
 @media screen and (max-width: 992px) {
+  html {
+    font-size:30px;
+  }
   body {
     margin:0;
   }
@@ -876,7 +879,7 @@ header .small {
 
   header .small .top {
     position:fixed;
-    height:40px;
+    height:60px;
     width:100%;
     left:0;
     z-index:102;
@@ -896,6 +899,7 @@ header .small {
     color:var(--blue);
     margin-top:5px;
     text-align:left;
+    font-size:1.2rem;
   }
 
   header .small .top .burgerMenu {
@@ -905,7 +909,7 @@ header .small {
   }
 
   header .small .burgerMenu i {
-    font-size:2em;
+    font-size:2rem;
     color:#000;
   }
 
@@ -934,7 +938,7 @@ header .small {
     header .small nav ul {
       margin:0;
       padding:0;
-      margin-left:40%;
+      margin-left:25%;
       background:none;
     }
 
@@ -957,21 +961,21 @@ header .small {
 
     header .small nav li a {
       padding:20px 0px;
-      font-size:1.2em;
+      font-size:1.5rem;
     }
     header .small nav li a i {
       padding:0px;
-      font-size:1.2em;
+      font-size:1.5rem;
     }
     header .small nav li a:hover {
       color:#999;
       padding:20px 0px;
-      font-size:1.2em;
+      font-size:1.5rem;
     }
     header .small nav li a:hover i {
       color:#999;
       padding:0;
-      font-size:1.2em;
+      font-size:1.5rem;
     }
 
     a.closeMenu {
@@ -1002,7 +1006,7 @@ header .small {
 /* ADAPT SECTIONS */
   section {
     width:100%;
-    min-height:100vh;
+    min-height:initial;
   }
 
   .container-row {
@@ -1019,7 +1023,7 @@ header .small {
 
   .card-long h3 {
     text-align:center;
-    font-size:1.5em;
+    font-size:1.7rem;
   }
 
   .card-long-left {
@@ -1035,19 +1039,22 @@ header .small {
   .stopList {
     margin-left:30%;
   }
+  .stopList li {
+    font-size:1.5em;
+  }
 
   /* ----------------> ALERTES <------------------- */
   .alertLine {
     width:calc(100% - 20px);
     margin-top:40px;
-    font-size:0.9em;
+    font-size:0.9rem;
     padding:10px;
     text-align:center;
     background-color: var(--red);
   }
 
   .alertLine .titleAlert {
-    font-size:1.5em;
+    font-size:1.5rem;
     font-weight: bold;
     color:rgba(0,0,0,0.7);
     margin:0;
@@ -1056,8 +1063,53 @@ header .small {
   .alertLine p {
     font-weight: 400;
     color:white;
-    font-size:1.2em;
+    font-size:1rem;
   }
+
+  /* ----------------> TABLES <------------------- */
+
+
+  .card-long table {
+    width:100%;
+    spacing:0;
+    border-spacing : 0;
+    border-collapse : collapse;
+  }
+
+  .card-long thead td:not(.normal) {
+    font-size:1.1rem;
+    font-weight: 500;
+  }
+
+
+  thead tr:last-child {
+    height:35px;
+    vertical-align: middle;
+    font-size:1.1rem;
+  }
+  tr.tableHead td {
+    position:relative;
+  }
+
+
+  tbody tr {
+    border-top:1px solid #ccc;
+    height:30px;
+    font-size:1rem;
+    color:#999;
+    transition:all 0.3s linear;
+  }
+  tbody tr:hover {
+    background:#eee;
+    color:#999
+  }
+
+  tbody td {
+    padding:10px 0;
+  }
+
+
+  /* //////////////////////////////////////////////////////// */
 
 
   /* RESPONSIVE FORM RESERVATIONS */
@@ -1080,8 +1132,6 @@ header .small {
     margin-left: 38px;
   }
 
-
-
 }
 
 /* ------------------------------------------------------ */
@@ -1089,6 +1139,9 @@ header .small {
 /* ------------------------------------------------------ */
 
 @media screen and (max-width: 600px) {
+  html {
+    font-size:30px;
+  }
   body {
     margin:0;
   }
@@ -1137,7 +1190,7 @@ header .small {
     }
 
     header .small .burgerMenu i {
-      font-size:2em;
+      font-size:2rem;
       color:#000;
     }
 
@@ -1187,21 +1240,21 @@ header .small {
 
   header .small nav li a {
     padding:20px 0px;
-    font-size:1.2em;
+    font-size:1.5rem;
   }
   header .small nav li a i {
     padding:0px;
-    font-size:1.2em;
+    font-size:1.5rem;
   }
   header .small nav li a:hover {
     color:#999;
     padding:20px 0px;
-    font-size:1.2em;
+    font-size:1.2rem;
   }
   header .small nav li a:hover i {
     color:#999;
     padding:0;
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 
   a.closeMenu {
@@ -1239,7 +1292,7 @@ header .small {
   }
 
   section h2 {
-    font-size:2.2em;
+    font-size:2.2rem;
   }
 
   .container-row {
@@ -1295,7 +1348,7 @@ header .small {
 
   .card-long h3 {
     text-align:center;
-    font-size:1.5em;
+    font-size:1.5rem;
   }
 
   .card-long-left {
@@ -1315,7 +1368,7 @@ header .small {
   .alertLine {
     width:calc(100% - 20px);
     margin-top:40px;
-    font-size:0.9em;
+    font-size:0.9rem;
     padding:10px;
     text-align:center;
     background-color: var(--red);
@@ -1331,7 +1384,7 @@ header .small {
   .alertLine p {
     font-weight: 400;
     color:white;
-    font-size:1.2em;
+    font-size:1.2rem;
   }
 
   /* RESPONSIVE MOBILE FORM RESERVATIONS */
