@@ -275,27 +275,28 @@ header .small {
   }
 
   .select::after{
-    padding: 0 .5em;
+    padding: 15px .5em;
   }
 
   #reservations .select{
     line-height: 2;
-  }
-
-  .select option{
-    font-size: .6rem;
+    height: 80px;
   }
 
   select{
-    font-size: .6rem;
-  }
-
-  #reservations ::placeholder{
-    font-size: .6rem;
+    font-size: 1.4rem;
   }
 
   #reservations label{
-    font-size: .8rem;
+    font-size: 1.5rem;
+  }
+
+  #reservations ::placeholder{
+    font-size: 1.2rem;
+  }
+
+  #reservations .container input{
+    padding: 25px;
   }
 
   /* RESPONSIVE TABLET CONTACTS */
@@ -336,6 +337,10 @@ header .small {
 
   form .container-contacts{
     margin-top: 50px;
+  }
+
+  footer a{
+    font-size: .8rem;
   }
 
 

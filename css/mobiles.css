@@ -262,12 +262,16 @@
     margin-left: 32px;
   }
 
-  #reservations ::placeholder{
-    font-size: .5rem;
+  #reservations label{
+    font-size: 1.5rem;
   }
 
-  #reservations label{
-    font-size: .6rem;
+  #reservations ::placeholder{
+    font-size: 1.2rem;
+  }
+
+  #reservations input{
+    padding: 25px;
   }
 
   .container-resa-coordonnees-nom,
