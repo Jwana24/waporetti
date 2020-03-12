@@ -723,6 +723,7 @@ tbody tr:hover {
 
 #reservations ::placeholder{
     font-style: italic;
+    font-size: .8rem;
 }
 
 .container-resa-button{
@@ -770,9 +771,8 @@ input.container-resa-coordonnees-codePost-ville{
 }
 
 #contacts ::placeholder{
-    font-family: 'Roboto';
     font-style: italic;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .container-contacts-coordonnees-nom,
@@ -1083,6 +1083,19 @@ header .small {
   }
 
 
+  /* RESPONSIVE TABLET FOOTER */
+
+  footer .container-content-list li:nth-child(2),
+  footer .container-content-list li:last-child{
+    width: initial;
+    padding-left: 50px;
+  }
+
+  form .container-contacts{
+    margin-top: 50px;
+  }
+
+
 
 }
 
@@ -1358,6 +1371,46 @@ header .small {
 
   .container-contacts .container{
     margin-left: 0;
+  }
+
+
+  /* RESPONSIVE MOBILE FOOTER */
+
+  footer div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  footer div:last-child{
+    padding-bottom: 20px;
+  }
+
+  footer .container-content-list{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer .container-content-list ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 40px;
+  }
+
+  footer .container-content-list li{
+    border-left: none;
+    width: 100%!important;
+    text-align: center;
+  }
+
+  footer .container-content-list a:hover{
+    text-decoration: none;
+    color: grey;
   }
 
 
