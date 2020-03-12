@@ -267,15 +267,62 @@ header .small {
   .container-resa-coordonnees-codePost,
   .container-resa-coordonnees-ville{
       width: 100%;
+      padding-bottom: 20px;
   }
 
   .container-resa-button {
       margin-left: 10px;
   }
 
+  .select::after{
+    padding: 0 .5em;
+  }
+
   #reservations .select{
-    width: 50%;
-    margin-left: 38px;
+    line-height: 2;
+  }
+
+  .select option{
+    font-size: .6rem;
+  }
+
+  select{
+    font-size: .6rem;
+  }
+
+  #reservations ::placeholder{
+    font-size: .6rem;
+  }
+
+  #reservations label{
+    font-size: .8rem;
+  }
+
+  /* RESPONSIVE TABLET CONTACTS */
+
+  .container-contacts{
+    margin-top: 30px;
+  }
+
+  .container-contacts-coordonnees-nom,
+  .container-contacts-coordonnees-prenom,
+  .container-contacts-coordonnees-mail,
+  .container-contacts-coordonnees-telephone,
+  .container-contacts-message{
+    padding-bottom: 25px;
+  }
+
+  #contacts label{
+    font-size: .8rem;
+  }
+
+  #contacts ::placeholder{
+    font-size: .6rem;
+  }
+
+  .container-contact-company h4,
+  .container-contact-company p{
+    font-size: .8rem;
   }
 
 

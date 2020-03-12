@@ -262,17 +262,63 @@
     margin-left: 32px;
   }
 
+  #reservations ::placeholder{
+    font-size: .5rem;
+  }
+
+  #reservations label{
+    font-size: .6rem;
+  }
+
+  .container-resa-coordonnees-nom,
+  .container-resa-coordonnees-prenom,
+  .container-resa-coordonnees-mail,
+  .container-resa-coordonnees-telephone,
+  .container-resa-coordonnees-codePost,
+  .container-resa-coordonnees-ville{
+    padding-bottom: 15px;
+  }
 
 
   /* RESPONSIVE MOBILE FORM CONTACTS */
 
+  #contacts{
+    margin-top: 10px;
+  }
+
   .container-contacts{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
 
   .container-contacts .container{
     margin-left: 0;
+  }
+
+  #contacts ::placeholder{
+    font-size: .5rem;
+  }
+
+  #contacts label{
+    font-size: .6rem;
+  }
+
+  .container-contacts-coordonnees-nom,
+  .container-contacts-coordonnees-prenom,
+  .container-contacts-coordonnees-mail,
+  .container-contacts-coordonnees-telephone,
+  .container-contacts-message{
+    padding-bottom: 15px;
+  }
+
+  .container-contact-company h4,
+  .container-contact-company p{
+    font-size: .6rem;
+  }
+
+  .container-contact-company div:first-child{
+    margin-top: 35px;
   }
 
 
@@ -301,13 +347,19 @@
     width: 100%;
     padding-left: 0;
     margin-left: 0;
-    line-height: 40px;
+    line-height: 55px;
   }
 
   footer .container-content-list li{
     border-left: none;
     width: 100%!important;
     text-align: center;
+    font-size: .7rem;
+  }
+
+  footer .container-content-list li:nth-child(2),
+  footer .container-content-list li:last-child{
+    padding-left: 0;
   }
 
   footer .container-content-list a:hover{

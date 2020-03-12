@@ -679,7 +679,7 @@ tbody tr:hover {
   color: white;
 }
 .select option{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 /* Fin select custom */
 
@@ -789,6 +789,10 @@ input.container-resa-coordonnees-codePost-ville{
     background-color: #f2f2f2;
     padding: 20px;
     margin-top: 65px;
+}
+
+..container-contacts div{
+  margin-top: 0;
 }
 
 #contacts .container input,
