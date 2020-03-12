@@ -533,8 +533,10 @@ tbody tr:hover {
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
 
 
-/* TO-DO: hover button from white-bg/blue-border/blue-text
-to blue-bg/no-border/white-text*/
+/*  - Dark Green : rgba(57,146,110,1)
+    - Green : rgba(106,210,170,1)
+    - Light Green : rgba(139,234,193,1)
+    */
 
 .price_card {
   flex: 1;
@@ -557,13 +559,13 @@ to blue-bg/no-border/white-text*/
 
 .titre_pass {
   color: var(--green);
-  font-size: 20pt;
-  letter-spacing: 0.1em; /* increases spacing between relative to font size */
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem; /* increases spacing between relative to font size */
 }
 
 .prix_pass {
-  color: hsl(93, 100%, 28%);
-  font-size: 70pt;
+  color: hsl(88, 45%, 45%);
+  font-size: 6rem;
   font-weight: 500;
   line-height: 0.1; /* decreases spacing between lines */
 }
@@ -575,7 +577,7 @@ to blue-bg/no-border/white-text*/
 .buy_button {
   color: var(--green);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 20px;
   padding: 20px 60px;
@@ -1257,6 +1259,9 @@ header .small {
   /*------------------------ CARDS TARIFS (MOBILE) ---------------- */
 
   /* hide prices description */
+  .line_break {
+    display: none;
+  }
 
   .info_pass {
     display: none;
@@ -1264,14 +1269,14 @@ header .small {
 
   /* shrink prix_pass */
   .prix_pass {
-    font-size: 50pt;
+    font-size: 4rem;
     line-height: normal;
     margin: -0.2em 0;
   }
 
   /* shrink top margin .titre_pass */
   .titre_pass {
-    margin-top: 0;
+    margin: 0 0 12px 0;
   }
 
   /* remove hover on card */
@@ -1282,6 +1287,7 @@ header .small {
 
   /* remove hover on button */
   .buy_button {
+    padding: 12px 80px;
     background: var(--green);
     color: white;
   }
