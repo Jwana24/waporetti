@@ -39,6 +39,10 @@ body {
   color:var(--yellow);
 }
 
+.white-text {
+  color:white;
+}
+
 
 .blue-bg {
   background-color:var(--blue);
@@ -137,7 +141,9 @@ a.button-circle:hover i {
   box-shadow:0px 0px 5px rgba(0,0,0,0.5);
 }
 
-
+.flex {
+  display:flex;
+}
 /*---------------HEADER-NAV---------------*/
 
 header .small {
@@ -385,6 +391,42 @@ tbody tr:hover {
   color:#999
 }
 
+.navTimes {
+  color:#000;
+  text-decoration:none;
+  display:inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  padding:0;
+  margin:0;
+}
+
+.navTimes.disabled, .navTimes.disabled i {
+  color:#ccc;
+}
+.navTimes:hover {
+    text-decoration:underline;
+}
+.navTimes.disabled:hover {
+    text-decoration:none;
+}
+
+.navTimes i {
+  color:#000;
+  line-height: 30px;
+  vertical-align: middle;
+  padding:0;
+  margin:0;
+}
+
+.TableNavTimes tr {
+
+}
+
+.TableNavTimes tr:hover {
+  background:none;
+}
+
 
 
 /* ---------------------> LEFT PART */
@@ -434,6 +476,10 @@ tbody tr:hover {
   position:relative;
   font-size:0.9em;
 }
+.stopList li:hover {
+  font-weight:400;
+}
+
 .stopList li::before {
   position:absolute;
   display:block;
@@ -460,6 +506,27 @@ tbody tr:hover {
   background-color: var(--pink);
 }
 
+/* ------------ ALERTES -----------<< */
+.alertLine {
+  width:calc(100% - 10px);
+  margin-top:40px;
+  font-size:0.9em;
+  padding:10px;
+  text-align:left;
+  background-color: var(--red);
+}
+
+.alertLine .titleAlert {
+  font-size:1.2em;
+  font-weight: bold;
+  color:rgba(0,0,0,0.7);
+  margin:0;
+}
+
+.alertLine p {
+  font-weight: 400;
+  color:white;
+}
 
 
 /*-------TARIFS-SECTION 3 : THOMAS-------*/
@@ -861,6 +928,7 @@ header .small {
       height:calc(100vh - 40px);
       transition:all 0.5s linear;
       margin-left:110vw;
+      border-left:1px solid #999;
     }
     header .small nav ul {
       margin:0;
@@ -956,14 +1024,38 @@ header .small {
   .card-long-left {
     width:95%;
   }
-  .stopList {
-    margin-left:30%;
-  }
   .card-long-center {
     width:95%;
   }
   .card-long-right {
     width:95%;
+  }
+
+  .stopList {
+    margin-left:30%;
+  }
+
+  /* ----------------> ALERTES <------------------- */
+  .alertLine {
+    width:calc(100% - 20px);
+    margin-top:40px;
+    font-size:0.9em;
+    padding:10px;
+    text-align:center;
+    background-color: var(--red);
+  }
+
+  .alertLine .titleAlert {
+    font-size:1.5em;
+    font-weight: bold;
+    color:rgba(0,0,0,0.7);
+    margin:0;
+  }
+
+  .alertLine p {
+    font-weight: 400;
+    color:white;
+    font-size:1.2em;
   }
 
 
@@ -1216,6 +1308,29 @@ header .small {
   }
   .card-long-right {
     width:95%;
+  }
+
+  /* ----------------> ALERTES <------------------- */
+  .alertLine {
+    width:calc(100% - 20px);
+    margin-top:40px;
+    font-size:0.9em;
+    padding:10px;
+    text-align:center;
+    background-color: var(--red);
+  }
+
+  .alertLine .titleAlert {
+    font-size:1.5em;
+    font-weight: bold;
+    color:rgba(0,0,0,0.7);
+    margin:0;
+  }
+
+  .alertLine p {
+    font-weight: 400;
+    color:white;
+    font-size:1.2em;
   }
 
   /* RESPONSIVE MOBILE FORM RESERVATIONS */
