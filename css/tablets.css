@@ -1,0 +1,296 @@
+/* ------------------------------------------------------ */
+/* ----------------------- TABLET ----------------------- */
+/* ------------------------------------------------------ */
+@media screen and (max-width: 992px) {
+  html {
+    font-size:30px;
+  }
+  body {
+    margin:0;
+  }
+  main, footer {
+    width:100%;
+  }
+
+/* TRANSFORM HEADER FOR BURGER */
+header .large {
+  display:none;
+}
+
+header .small {
+    width:100vw;
+    display:block;
+    z-index:101;
+  }
+
+  header .small .top {
+    position:fixed;
+    height:60px;
+    width:100%;
+    left:0;
+    z-index:102;
+    top:0;
+    background:#fff;
+    box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
+    display:flex;
+    flex-direction: row;
+  }
+
+  header .small .titleNav {
+    left:10px;
+    top:0px;
+    position:relative;
+  }
+  header .small .titleNav h3 {
+    color:var(--blue);
+    margin-top:5px;
+    text-align:left;
+    font-size:1.2rem;
+  }
+
+  header .small .top .burgerMenu {
+    margin-right:50px;
+    padding:auto;
+    display:inline-block;
+  }
+
+  header .small .burgerMenu i {
+    font-size:2rem;
+    color:#000;
+  }
+
+  a.burgerMenu:hover {
+    background:var(--blue);
+    cursor:pointer;
+  }
+
+  /* LE MENU ISSU DU BURGER */
+
+    header .small nav {
+      position:fixed;
+      display:flex;
+      z-index:99;
+      background:#fff;
+      align-items: center;
+      top:40px;
+      left:0px;
+      width:100vw;
+      min-height:calc(100vh - 40px);
+      height:calc(100vh - 40px);
+      transition:all 0.5s linear;
+      margin-left:110vw;
+      border-left:1px solid #999;
+    }
+    header .small nav ul {
+      margin:0;
+      padding:0;
+      margin-left:25%;
+      background:none;
+    }
+
+    header .small nav h3 {
+      position:absolute;
+      top:0px;
+      left:10px;
+      color:var(--blue);
+      font-family: "Lobster";
+
+    }
+
+    header .small nav li {
+      text-align:left;
+      position: relative;
+      padding:0;
+      background:none;
+
+    }
+
+    header .small nav li a {
+      padding:20px 0px;
+      font-size:1.5rem;
+    }
+    header .small nav li a i {
+      padding:0px;
+      font-size:1.5rem;
+    }
+    header .small nav li a:hover {
+      color:#999;
+      padding:20px 0px;
+      font-size:1.5rem;
+    }
+    header .small nav li a:hover i {
+      color:#999;
+      padding:0;
+      font-size:1.5rem;
+    }
+
+    a.closeMenu {
+      position:absolute;
+      top:20px;
+      right:20px;
+      color:#999;
+    }
+
+
+    li#item-1, li#item-2, li#item-3,li#item-4, li#item-5 {
+      animation: none;
+    }
+
+    .bottomNav {
+      display:block;
+      position:absolute;
+      bottom:40%;
+      width:100%;
+      font-size:800%;
+      color:var(--blue);
+      opacity: 0.1;
+      text-align:center;
+      font-family: Lobster;
+    }
+
+
+/* ADAPT SECTIONS */
+  section {
+    width:100%;
+    min-height:initial;
+  }
+
+  .container-row {
+    flex-direction:column;
+  }
+
+
+
+  /* ----------------------- SPECIFICITE TRAJETS ET HORAIRES ------ */
+
+  .card-long {
+    flex-direction: column;
+  }
+
+  .card-long h3 {
+    text-align:center;
+    font-size:1.7rem;
+  }
+
+  .card-long-left {
+    width:95%;
+  }
+  .card-long-center {
+    width:95%;
+  }
+  .card-long-right {
+    width:95%;
+  }
+
+  .stopList {
+    margin-left:30%;
+  }
+  .stopList li {
+    font-size:1.5em;
+  }
+
+  /* ----------------> ALERTES <------------------- */
+  .alertLine {
+    width:calc(100% - 20px);
+    margin-top:40px;
+    font-size:0.9rem;
+    padding:10px;
+    text-align:center;
+    background-color: var(--red);
+  }
+
+  .alertLine .titleAlert {
+    font-size:1.5rem;
+    font-weight: bold;
+    color:rgba(0,0,0,0.7);
+    margin:0;
+  }
+
+  .alertLine p {
+    font-weight: 400;
+    color:white;
+    font-size:1rem;
+  }
+
+  /* ----------------> TABLES <------------------- */
+
+
+  .card-long table {
+    width:100%;
+    spacing:0;
+    border-spacing : 0;
+    border-collapse : collapse;
+  }
+
+  .card-long thead td:not(.normal) {
+    font-size:1.1rem;
+    font-weight: 500;
+  }
+
+
+  thead tr:last-child {
+    height:35px;
+    vertical-align: middle;
+    font-size:1.1rem;
+  }
+  tr.tableHead td {
+    position:relative;
+  }
+
+
+  tbody tr {
+    border-top:1px solid #ccc;
+    height:30px;
+    font-size:1rem;
+    color:#999;
+    transition:all 0.3s linear;
+  }
+  tbody tr:hover {
+    background:#eee;
+    color:#999
+  }
+
+  tbody td {
+    padding:10px 0;
+  }
+
+
+  /* //////////////////////////////////////////////////////// */
+
+
+  /* RESPONSIVE FORM RESERVATIONS */
+
+  .container-resa-coordonnees-nom,
+  .container-resa-coordonnees-prenom,
+  .container-resa-coordonnees-mail,
+  .container-resa-coordonnees-telephone,
+  .container-resa-coordonnees-codePost,
+  .container-resa-coordonnees-ville{
+      width: 100%;
+  }
+
+  .container-resa-button {
+      margin-left: 10px;
+  }
+
+  #reservations .select{
+    width: 50%;
+    margin-left: 38px;
+  }
+
+
+  /* RESPONSIVE TABLET FOOTER */
+
+  footer .container-content-list li:nth-child(2),
+  footer .container-content-list li:last-child{
+    width: initial;
+    padding-left: 50px;
+  }
+
+  form .container-contacts{
+    margin-top: 50px;
+  }
+
+
+
+}
