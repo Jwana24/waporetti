@@ -378,7 +378,6 @@
     border-left: none;
     width: 100%!important;
     text-align: center;
-    font-size: .7rem;
   }
 
   footer .container-content-list li:nth-child(2),
@@ -391,5 +390,7 @@
     color: grey;
   }
 
-
+  footer a{
+    font-size: 1.3rem;
+  }
 }
