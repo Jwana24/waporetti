@@ -884,8 +884,3 @@ footer .container-content-list a:hover{
   text-decoration: underline;
   color: black;
 }
-
-
-/*---------------MEDIA QUERIES---------------*/
-@import "tablets.css";
-@import "mobiles.css";
