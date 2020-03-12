@@ -267,11 +267,13 @@ header .small {
   .container-resa-coordonnees-codePost,
   .container-resa-coordonnees-ville{
       width: 100%;
-      padding-bottom: 20px;
+      padding-bottom: 35px;
   }
-
-  .container-resa-button {
-      margin-left: 10px;
+  
+  .container-resa-button-radio{
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 60px;
   }
 
   .select::after{
@@ -281,14 +283,15 @@ header .small {
   #reservations .select{
     line-height: 2;
     height: 80px;
+    width: 90%;
   }
 
   select{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   #reservations label{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #reservations ::placeholder{
@@ -301,8 +304,16 @@ header .small {
 
   /* RESPONSIVE TABLET CONTACTS */
 
+  #contacts .container input{
+    padding: 25px;
+  }
+
+  #contacts form{
+    margin-top: 20px;
+  }
+
   .container-contacts{
-    margin-top: 30px;
+    margin-top: 0;
   }
 
   .container-contacts-coordonnees-nom,
@@ -310,20 +321,20 @@ header .small {
   .container-contacts-coordonnees-mail,
   .container-contacts-coordonnees-telephone,
   .container-contacts-message{
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
   #contacts label{
-    font-size: .8rem;
+    font-size: 1.3rem;
   }
 
   #contacts ::placeholder{
-    font-size: .6rem;
+    font-size: 1.2rem;
   }
 
   .container-contact-company h4,
   .container-contact-company p{
-    font-size: .8rem;
+    font-size: 1.1rem;
   }
 
 
@@ -333,10 +344,6 @@ header .small {
   footer .container-content-list li:last-child{
     width: initial;
     padding-left: 50px;
-  }
-
-  form .container-contacts{
-    margin-top: 50px;
   }
 
   footer a{
