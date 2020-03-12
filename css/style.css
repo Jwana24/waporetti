@@ -571,6 +571,9 @@ tbody tr:hover {
     var(--moss)
     var(--darkmoss)
     */
+#tarifs h2 {
+  margin-bottom: 20px;
+}
 
 .price_card {
   flex: 1;
