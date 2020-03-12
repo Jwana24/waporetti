@@ -294,7 +294,30 @@ li#item-5:hover {
 
 
 /*-------HOMEPAGE-SECTION 1 : GUILLAUME--------*/
+h1 {
+  font-size: 7em;
+  color: var(--pink);
+  text-align: center;
+  font-family: "Lobster";
+}
+p{
+  font-size: 1.2em;
 
+}
+
+section#homePage {
+  background: url('https://media.istockphoto.com/photos/view-on-bordeaux-in-the-evening-france-picture-id507451213') no-repeat center center;
+background-size: cover;
+}
+.homepageSpecs{
+  align-items: center;
+  height: 100%;
+}
+.homepageSpecs p {
+  display: block;
+  color: white;
+width: 50%;
+}
 
 
 
