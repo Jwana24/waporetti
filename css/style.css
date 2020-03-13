@@ -319,26 +319,34 @@ h1 {
   color: white;
   text-align: center;
   font-family: "Lobster";
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
 }
-p{
-  font-size: 1rem;
+section#homePage p {
+  font-size: 1.1rem;
+  background-color:rgba(0,0,0,0.4);
+  padding:25px;
+  border-radius:7px;
+  /*2px 2px 8px rgba(0,0,0,0.9);*/
 
 }
 
 section#homePage {
   background: url('http://bordeauxcanoe.com/wp-content/uploads/2014/10/100_0835.jpg') no-repeat center center;
 background-size: cover;
+width:100%;
+
 }
+
 .homepageSpecs{
   align-items: center;
   height: 100%;
 }
 .homepageSpecs p {
-
+line-height:1.5;
 column-count: 2;
 column-width: 50%;
   color: white;
-width: 50%;
+width: 70%;
 }
 
 

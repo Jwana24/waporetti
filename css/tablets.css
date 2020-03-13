@@ -395,6 +395,17 @@ header .small {
     padding-left: 0;
     width: 100%;
     line-height: 2;
+ 
+
+/* ----------------------- PARTIE HOME PAGE GUILLAUME --------------------------- */
+
+.homepageSpecs p {
+
+  column-count: 1;
+  column-width: 50%;
+  color: white;
+  width: 100%;
+
   }
 
   footer .container-content-list li:nth-child(2),
