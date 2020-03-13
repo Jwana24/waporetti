@@ -256,6 +256,38 @@ header .small {
 
 
   /* //////////////////////////////////////////////////////// */
+  /*------------------------ CARDS TARIFS ---------------- */
+
+  
+  .line_break {
+    display: none;
+  }
+
+  /* shrink prix_pass */
+  .prix_pass {
+    font-size: 5rem;
+    line-height: normal;
+    margin: -0.2em 0;
+  }
+
+  /* shrink top margin .titre_pass */
+  .titre_pass {
+    margin: 0 0 12px 0;
+  }
+
+  /* remove hover on card */
+  .price_card:hover{
+    box-shadow: none;
+    border: 1px solid var(--lightmoss);
+  }
+
+  /* remove hover on button */
+  .buy_button {
+    margin-top: 0;
+    padding: 12px 80px;
+    background: var(--moss);
+    color: white;
+  }
 
 
   /* RESPONSIVE FORM RESERVATIONS */
