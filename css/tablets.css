@@ -291,15 +291,15 @@ header .small {
     margin-top: 50px;
   }
 
-
+ 
 
 /* ----------------------- PARTIE HOME PAGE GUILLAUME --------------------------- */
 
 .homepageSpecs p {
 
-  column-count: 2;
+  column-count: 1;
   column-width: 50%;
-    color: white;
+  color: white;
   width: 100%;
   }
 
