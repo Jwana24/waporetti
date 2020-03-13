@@ -257,22 +257,92 @@
 
   /* RESPONSIVE MOBILE FORM RESERVATIONS */
 
+  .container-resa-coordonnees-nom,
+  .container-resa-coordonnees-prenom,
+  .container-resa-coordonnees-mail,
+  .container-resa-coordonnees-telephone,
+  .container-resa-coordonnees-codePost,
+  .container-resa-coordonnees-ville{
+      width: 100%;
+      padding-bottom: 35px;
+  }
+
   #reservations .select{
     width: 90%;
     margin-left: 32px;
   }
 
+  .container-resa-button {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  #reservations label{
+    font-size: 1.3rem;
+  }
+
+  #reservations ::placeholder{
+    font-size: 1.2rem;
+  }
+
+  #reservations input{
+    padding: 25px;
+  }
+
+  .container-resa-coordonnees-nom,
+  .container-resa-coordonnees-prenom,
+  .container-resa-coordonnees-mail,
+  .container-resa-coordonnees-telephone,
+  .container-resa-coordonnees-codePost,
+  .container-resa-coordonnees-ville{
+    padding-bottom: 35px;
+  }
 
 
   /* RESPONSIVE MOBILE FORM CONTACTS */
 
+  #contacts{
+    margin-top: 10px;
+  }
+
+  form .container-contacts{
+    margin-top: 0;
+  }
+
   .container-contacts{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
 
   .container-contacts .container{
     margin-left: 0;
+  }
+
+  #contacts ::placeholder{
+    font-size: 1.2rem;
+  }
+
+  #contacts label{
+    font-size: 1.3rem;
+  }
+
+  .container-contacts-coordonnees-nom,
+  .container-contacts-coordonnees-prenom,
+  .container-contacts-coordonnees-mail,
+  .container-contacts-coordonnees-telephone,
+  .container-contacts-message{
+    padding-bottom: 25px;
+  }
+
+  .container-contact-company h4,
+  .container-contact-company p{
+    font-size: 1.1rem;
+  }
+
+  .container-contact-company div:first-child{
+    margin-top: 35px;
   }
 
 
@@ -301,7 +371,7 @@
     width: 100%;
     padding-left: 0;
     margin-left: 0;
-    line-height: 40px;
+    line-height: 55px;
   }
 
   footer .container-content-list li{
@@ -310,10 +380,17 @@
     text-align: center;
   }
 
+  footer .container-content-list li:nth-child(2),
+  footer .container-content-list li:last-child{
+    padding-left: 0;
+  }
+
   footer .container-content-list a:hover{
     text-decoration: none;
     color: grey;
   }
 
-
+  footer a{
+    font-size: 1.3rem;
+  }
 }

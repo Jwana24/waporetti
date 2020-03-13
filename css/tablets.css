@@ -256,6 +256,38 @@ header .small {
 
 
   /* //////////////////////////////////////////////////////// */
+  /*------------------------ CARDS TARIFS ---------------- */
+
+  
+  .line_break {
+    display: none;
+  }
+
+  /* shrink prix_pass */
+  .prix_pass {
+    font-size: 5rem;
+    line-height: normal;
+    margin: -0.2em 0;
+  }
+
+  /* shrink top margin .titre_pass */
+  .titre_pass {
+    margin: 0 0 12px 0;
+  }
+
+  /* remove hover on card */
+  .price_card:hover{
+    box-shadow: none;
+    border: 1px solid var(--lightmoss);
+  }
+
+  /* remove hover on button */
+  .buy_button {
+    margin-top: 0;
+    padding: 12px 80px;
+    background: var(--moss);
+    color: white;
+  }
 
 
   /* RESPONSIVE FORM RESERVATIONS */
@@ -267,30 +299,111 @@ header .small {
   .container-resa-coordonnees-codePost,
   .container-resa-coordonnees-ville{
       width: 100%;
+      padding-bottom: 35px;
+  }
+  
+  .container-resa-button-radio{
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 60px;
   }
 
-  .container-resa-button {
-      margin-left: 10px;
+  .select::after{
+    padding: 15px .5em;
   }
 
   #reservations .select{
-    width: 50%;
-    margin-left: 38px;
+    line-height: 2;
+    height: 80px;
+    width: 90%;
+  }
+
+  select{
+    font-size: 1.1rem;
+  }
+
+  #reservations label{
+    font-size: 1.3rem;
+  }
+
+  #reservations ::placeholder{
+    font-size: 1.2rem;
+  }
+
+  #reservations .container input{
+    padding: 25px;
+  }
+
+  /* RESPONSIVE TABLET CONTACTS */
+
+  #contacts .container input{
+    padding: 25px;
+  }
+
+  #contacts form{
+    margin-top: 20px;
+  }
+
+  .container-contacts{
+    margin-top: 0;
+  }
+
+  .container-contacts-coordonnees-nom,
+  .container-contacts-coordonnees-prenom,
+  .container-contacts-coordonnees-mail,
+  .container-contacts-coordonnees-telephone,
+  .container-contacts-message{
+    padding-bottom: 35px;
+  }
+
+  #contacts label{
+    font-size: 1.3rem;
+  }
+
+  #contacts ::placeholder{
+    font-size: 1.2rem;
+  }
+
+  .container-contact-company h4,
+  .container-contact-company p{
+    font-size: 1.1rem;
   }
 
 
   /* RESPONSIVE TABLET FOOTER */
 
+  footer h3{
+    font-size: 2.3rem;
+  }
+
+  footer div:first-child{
+    flex-direction: column;
+  }
+
+  footer .logo-centre{
+    display: flex;
+    align-items: center;
+  }
+
+  footer .container-content-list{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer .container-content-list ul{
+    flex-direction: column;
+    padding-left: 0;
+    width: 100%;
+    line-height: 2;
+  }
+
   footer .container-content-list li:nth-child(2),
   footer .container-content-list li:last-child{
     width: initial;
-    padding-left: 50px;
+    border: none;
   }
 
-  form .container-contacts{
-    margin-top: 50px;
+  footer a{
+    font-size: 1.3rem;
   }
-
-
-
 }
